@@ -1,2 +1,2 @@
-# projetoSD
+# projeto1SD
 Repositório para o primeiro projeto de IF675 - Sistemas Digitais (2018.2)
