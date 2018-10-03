@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 440 208 536 304)
-	(text "Sum(S)" (rect 5 0 47 14)(font "Arial" (font_size 8)))
+	(text "Sum" (rect 5 0 29 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -138,8 +138,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 440 336 536 432)
-	(text "Carry(Cout)" (rect 5 0 72 14)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(text "CarryOut" (rect 5 0 56 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)

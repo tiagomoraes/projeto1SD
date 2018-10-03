@@ -1,0 +1,28 @@
+|FullAdder
+S <= Sum:inst.S
+A => Sum:inst.A
+A => CarryOut:inst2.A
+B => Sum:inst.B
+B => CarryOut:inst2.B
+Cin => Sum:inst.Cin
+Cin => CarryOut:inst2.Cin
+Cout <= CarryOut:inst2.Cout
+
+
+|FullAdder|Sum:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst.IN1
+Cin => inst1.IN1
+
+
+|FullAdder|CarryOut:inst2
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN1
+Cin => inst2.IN1
+Cin => inst3.IN1
+A => inst3.IN0
+A => inst.IN0
+
+
