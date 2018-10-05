@@ -1,5 +1,5 @@
 Fitter report for ULA_project
-Fri Oct 05 13:42:39 2018
+Fri Oct 05 14:23:29 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -63,18 +63,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +-------------------------------+----------------------------------------------+
-; Fitter Status                 ; Successful - Fri Oct 05 13:42:39 2018        ;
+; Fitter Status                 ; Successful - Fri Oct 05 14:23:29 2018        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ULA_project                                  ;
-; Top-level Entity Name         ; Complemento2                                 ;
+; Top-level Entity Name         ; AndVector                                    ;
 ; Family                        ; Stratix II                                   ;
 ; Device                        ; EP2S15F484C3                                 ;
 ; Timing Models                 ; Final                                        ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 3 / 12,480 ( < 1 % )                         ;
+;     Combinational ALUTs       ; 4 / 12,480 ( < 1 % )                         ;
 ;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 8 / 343 ( 2 % )                              ;
+; Total pins                    ; 12 / 343 ( 3 % )                             ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
@@ -143,12 +143,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 2.71        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-4 processors         ; < 0.1%      ;
+;     2-4 processors         ;  25.0%      ;
 +----------------------------+-------------+
 
 
@@ -157,14 +157,18 @@ applicable agreement for further details.
 +----------+-------------------------------+
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
-; OUT[3]   ; Incomplete set of assignments ;
-; OUT[2]   ; Incomplete set of assignments ;
-; OUT[1]   ; Incomplete set of assignments ;
-; OUT[0]   ; Incomplete set of assignments ;
+; Out[3]   ; Incomplete set of assignments ;
+; Out[2]   ; Incomplete set of assignments ;
+; Out[1]   ; Incomplete set of assignments ;
+; Out[0]   ; Incomplete set of assignments ;
 ; A[3]     ; Incomplete set of assignments ;
+; B[3]     ; Incomplete set of assignments ;
 ; A[2]     ; Incomplete set of assignments ;
+; B[2]     ; Incomplete set of assignments ;
 ; A[1]     ; Incomplete set of assignments ;
+; B[1]     ; Incomplete set of assignments ;
 ; A[0]     ; Incomplete set of assignments ;
+; B[0]     ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -174,8 +178,8 @@ applicable agreement for further details.
 ; Type                    ; Value              ;
 +-------------------------+--------------------+
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 13 ( 0.00 % )  ;
-;     -- Achieved         ; 0 / 13 ( 0.00 % )  ;
+;     -- Requested        ; 0 / 18 ( 0.00 % )  ;
+;     -- Achieved         ; 0 / 18 ( 0.00 % )  ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -197,7 +201,7 @@ applicable agreement for further details.
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 13      ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 18      ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
@@ -212,26 +216,26 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 +-----------------------------------------------------------------------------------+----------------------+
 ; Resource                                                                          ; Usage                ;
 +-----------------------------------------------------------------------------------+----------------------+
-; Combinational ALUTs                                                               ; 3 / 12,480 ( < 1 % ) ;
+; Combinational ALUTs                                                               ; 4 / 12,480 ( < 1 % ) ;
 ; Dedicated logic registers                                                         ; 0 / 12,480 ( 0 % )   ;
 ;                                                                                   ;                      ;
 ; Combinational ALUT usage by number of inputs                                      ;                      ;
 ;     -- 7 input functions                                                          ; 0                    ;
 ;     -- 6 input functions                                                          ; 0                    ;
 ;     -- 5 input functions                                                          ; 0                    ;
-;     -- 4 input functions                                                          ; 1                    ;
-;     -- <=3 input functions                                                        ; 2                    ;
+;     -- 4 input functions                                                          ; 0                    ;
+;     -- <=3 input functions                                                        ; 4                    ;
 ;                                                                                   ;                      ;
 ; Combinational ALUTs by mode                                                       ;                      ;
-;     -- normal mode                                                                ; 3                    ;
+;     -- normal mode                                                                ; 4                    ;
 ;     -- extended LUT mode                                                          ; 0                    ;
 ;     -- arithmetic mode                                                            ; 0                    ;
 ;     -- shared arithmetic mode                                                     ; 0                    ;
 ;                                                                                   ;                      ;
-; Logic utilization                                                                 ; 3 / 12,480 ( < 1 % ) ;
+; Logic utilization                                                                 ; 4 / 12,480 ( < 1 % ) ;
 ;     -- Difficulty Clustering Design                                               ; Low                  ;
-;     -- Combinational ALUT/register pairs used in final Placement                  ; 3                    ;
-;         -- Combinational with no register                                         ; 3                    ;
+;     -- Combinational ALUT/register pairs used in final Placement                  ; 4                    ;
+;         -- Combinational with no register                                         ; 4                    ;
 ;         -- Register only                                                          ; 0                    ;
 ;         -- Combinational with a register                                          ; 0                    ;
 ;     -- Estimated pairs recoverable by pairing ALUTs and registers as design grows ; 0                    ;
@@ -246,13 +250,13 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ;     -- Dedicated logic registers                                                  ; 0 / 12,480 ( 0 % )   ;
 ;     -- I/O registers                                                              ; 0 / 1,930 ( 0 % )    ;
 ;                                                                                   ;                      ;
-; ALMs:  partially or completely used                                               ; 2 / 6,240 ( < 1 % )  ;
+; ALMs:  partially or completely used                                               ; 4 / 6,240 ( < 1 % )  ;
 ;                                                                                   ;                      ;
-; Total LABs:  partially or completely used                                         ; 1 / 780 ( < 1 % )    ;
+; Total LABs:  partially or completely used                                         ; 4 / 780 ( < 1 % )    ;
 ;                                                                                   ;                      ;
 ; User inserted logic elements                                                      ; 0                    ;
 ; Virtual pins                                                                      ; 0                    ;
-; I/O pins                                                                          ; 8 / 343 ( 2 % )      ;
+; I/O pins                                                                          ; 12 / 343 ( 3 % )     ;
 ;     -- Clock pins                                                                 ; 0 / 16 ( 0 % )       ;
 ; Global signals                                                                    ; 0                    ;
 ; M512s                                                                             ; 0 / 104 ( 0 % )      ;
@@ -271,12 +275,12 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; Remote update blocks                                                              ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)                                            ; 0% / 0% / 0%         ;
 ; Peak interconnect usage (total/H/V)                                               ; 0% / 0% / 0%         ;
-; Maximum fan-out node                                                              ; A[0]                 ;
-; Maximum fan-out                                                                   ; 4                    ;
-; Highest non-global fan-out signal                                                 ; A[0]                 ;
-; Highest non-global fan-out                                                        ; 4                    ;
-; Total fan-out                                                                     ; 13                   ;
-; Average fan-out                                                                   ; 1.08                 ;
+; Maximum fan-out node                                                              ; inst3                ;
+; Maximum fan-out                                                                   ; 1                    ;
+; Highest non-global fan-out signal                                                 ; inst3                ;
+; Highest non-global fan-out                                                        ; 1                    ;
+; Total fan-out                                                                     ; 12                   ;
+; Average fan-out                                                                   ; 0.71                 ;
 +-----------------------------------------------------------------------------------+----------------------+
 *  Register count does not include registers inside block RAM or DSP blocks.
 
@@ -287,10 +291,14 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; A[0] ; AB10  ; 10       ; 25           ; 0            ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; A[1] ; AA10  ; 10       ; 25           ; 0            ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; A[2] ; Y9    ; 10       ; 25           ; 0            ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; A[3] ; V9    ; 10       ; 26           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; A[0] ; Y18   ; 8        ; 10           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; A[1] ; Y6    ; 7        ; 31           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; A[2] ; T4    ; 6        ; 40           ; 4            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; A[3] ; Y15   ; 8        ; 14           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; B[0] ; H22   ; 2        ; 0            ; 20           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; B[1] ; W9    ; 10       ; 26           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; B[2] ; W5    ; 7        ; 38           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; B[3] ; L7    ; 5        ; 40           ; 17           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -299,10 +307,10 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 +--------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; OUT[0] ; AA9   ; 10       ; 25           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT[1] ; G14   ; 3        ; 7            ; 27           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT[2] ; Y2    ; 6        ; 40           ; 1            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 12mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT[3] ; AB17  ; 8        ; 11           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[0] ; E16   ; 3        ; 2            ; 27           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[1] ; B6    ; 4        ; 30           ; 27           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[2] ; U2    ; 6        ; 40           ; 5            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 12mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[3] ; U13   ; 8        ; 10           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -312,15 +320,15 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
 +----------+----------------+---------------+--------------+
 ; 1        ; 0 / 40 ( 0 % ) ; 3.3V          ; --           ;
-; 2        ; 0 / 44 ( 0 % ) ; 3.3V          ; --           ;
+; 2        ; 1 / 44 ( 2 % ) ; 3.3V          ; --           ;
 ; 3        ; 2 / 50 ( 4 % ) ; 3.3V          ; --           ;
-; 4        ; 0 / 35 ( 0 % ) ; 3.3V          ; --           ;
-; 5        ; 0 / 44 ( 0 % ) ; 3.3V          ; --           ;
-; 6        ; 1 / 40 ( 3 % ) ; 3.3V          ; --           ;
-; 7        ; 0 / 34 ( 0 % ) ; 3.3V          ; --           ;
-; 8        ; 1 / 43 ( 2 % ) ; 3.3V          ; --           ;
+; 4        ; 1 / 35 ( 3 % ) ; 3.3V          ; --           ;
+; 5        ; 1 / 44 ( 2 % ) ; 3.3V          ; --           ;
+; 6        ; 2 / 40 ( 5 % ) ; 3.3V          ; --           ;
+; 7        ; 2 / 34 ( 6 % ) ; 3.3V          ; --           ;
+; 8        ; 3 / 43 ( 7 % ) ; 3.3V          ; --           ;
 ; 9        ; 0 / 6 ( 0 % )  ; 3.3V          ; --           ;
-; 10       ; 5 / 6 ( 83 % ) ; 3.3V          ; --           ;
+; 10       ; 1 / 6 ( 17 % ) ; 3.3V          ; --           ;
 +----------+----------------+---------------+--------------+
 
 
@@ -359,8 +367,8 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; AA6      ; 159        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA7      ; 155        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA8      ; 151        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA9      ; 144        ; 10       ; OUT[0]                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AA10     ; 147        ; 10       ; A[1]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA9      ; 144        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AA10     ; 147        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA11     ; 141        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA12     ; 138        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA13     ; 137        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -382,14 +390,14 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; AB7      ; 153        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB8      ; 150        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB9      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AB10     ; 145        ; 10       ; A[0]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB10     ; 145        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB11     ;            ; 7        ; VCCIO7                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB12     ;            ; 8        ; VCCIO8                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB13     ; 139        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB14     ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB15     ; 125        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB16     ; 124        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AB17     ; 117        ; 8        ; OUT[3]                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB17     ; 117        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB18     ; 118        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB19     ; 87         ; 8        ; #TRST                    ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB20     ;            ; 8        ; VCCIO8                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -400,7 +408,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; B3       ; 276        ; 4        ; #TDO                     ; output ;              ;         ; --         ;                 ; --       ; --           ;
 ; B4       ; 279        ; 4        ; ^MSEL2                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; B5       ; 305        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B6       ; 309        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B6       ; 309        ; 4        ; Out[1]                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B7       ; 313        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B8       ; 317        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B9       ; 320        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -476,7 +484,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; E13      ; 338        ; 3        ; ~DATA0~ / RESERVED_INPUT ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E14      ; 357        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E15      ; 365        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; E16      ; 374        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; E16      ; 374        ; 3        ; Out[0]                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E17      ; 376        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E18      ; 380        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E19      ; 3          ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -518,7 +526,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; G11      ;            ;          ; VCCD_PLL5                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G12      ; 336        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G13      ; 348        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G14      ; 359        ; 3        ; OUT[1]                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G14      ; 359        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G15      ; 366        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G16      ; 370        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G17      ; 7          ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -548,7 +556,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; H19      ; 18         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H20      ; 16         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H21      ; 26         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; H22      ; 24         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; H22      ; 24         ; 2        ; B[0]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J1       ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J2       ; 247        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J3       ; 245        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -599,7 +607,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; L4       ;            ;          ; GNDA_PLL4                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L5       ;            ;          ; GNDA_PLL4                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L6       ;            ;          ; VCCD_PLL4                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; L7       ; 238        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; L7       ; 238        ; 5        ; B[3]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L8       ; 236        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L9       ;            ; 5        ; VCCPD5                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; L10      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -706,7 +714,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; T1       ; 219        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T2       ; 217        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T3       ; 207        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T4       ; 205        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; T4       ; 205        ; 6        ; A[2]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T5       ; 210        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T6       ; 208        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T7       ; 186        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -726,7 +734,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; T21      ; 58         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T22      ; 56         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U1       ; 211        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; U2       ; 209        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; U2       ; 209        ; 6        ; Out[2]                   ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; U3       ;            ; 6        ; VREFB6                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; U4       ; 206        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U5       ; 204        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -737,7 +745,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; U10      ; 158        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U11      ;            ;          ; VCCD_PLL6                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U12      ; 130        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; U13      ; 112        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; U13      ; 112        ; 8        ; Out[3]                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; U14      ; 103        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U15      ; 99         ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U16      ; 94         ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -755,7 +763,7 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; V6       ; 185        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V7       ; 175        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V8       ; 166        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; V9       ; 149        ; 10       ; A[3]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; V9       ; 149        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V10      ; 165        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V11      ; 132        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V12      ; 134        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -773,11 +781,11 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; W2       ; 197        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W3       ; 194        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W4       ; 192        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; W5       ; 182        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; W5       ; 182        ; 7        ; B[2]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; W6       ;            ; 7        ; VREFB7                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; W7       ; 177        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W8       ;            ; 7        ; VREFB7                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
-; W9       ; 148        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; W9       ; 148        ; 10       ; B[1]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; W10      ; 142        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W11      ; 133        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W12      ; 135        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -792,23 +800,23 @@ The pin-out file can be found in C:/Users/mbmt/Downloads/projeto1SD/ULA_project.
 ; W21      ; 78         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W22      ; 76         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y1       ; 195        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; Y2       ; 193        ; 6        ; OUT[2]                   ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; Y2       ; 193        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y3       ; 184        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y4       ; 189        ; 7        ; PLL_ENA                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y5       ; 162        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y6       ; 160        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; Y6       ; 160        ; 7        ; A[1]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y7       ; 154        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y8       ; 152        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y9       ; 146        ; 10       ; A[2]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y9       ; 146        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y10      ; 140        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y11      ; 143        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y12      ; 136        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y13      ; 131        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y14      ; 110        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y15      ; 126        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; Y15      ; 126        ; 8        ; A[3]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y16      ; 121        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y17      ; 116        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y18      ; 113        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; Y18      ; 113        ; 8        ; A[0]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y19      ;            ; 8        ; VREFB8                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y20      ; 91         ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y21      ; 82         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -854,21 +862,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                               ;
-+----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+------------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; ALMs  ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Combinational with no register ; Register-Only      ; Combinational with a register ; Full Hierarchy Name                                  ; Library Name ;
-;                            ;                     ;       ;                           ;               ;                   ;       ;      ;        ;              ;         ;           ;           ;      ;              ; ALUT/register pair             ; ALUT/register pair ; ALUT/register pair            ;                                                      ;              ;
-+----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+------------------------------------------------------+--------------+
-; |Complemento2              ; 3 (0)               ; 2 (0) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 8    ; 0            ; 3 (0)                          ; 0 (0)              ; 0 (0)                         ; |Complemento2                                        ; work         ;
-;    |Somador:inst|          ; 3 (0)               ; 2 (0) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)                          ; 0 (0)              ; 0 (0)                         ; |Complemento2|Somador:inst                           ;              ;
-;       |FullAdder:inst11|   ; 1 (0)               ; 1 (0) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)                          ; 0 (0)              ; 0 (0)                         ; |Complemento2|Somador:inst|FullAdder:inst11          ; work         ;
-;          |Sum:inst|        ; 1 (1)               ; 1 (1) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |Complemento2|Somador:inst|FullAdder:inst11|Sum:inst ; work         ;
-;       |FullAdder:inst9|    ; 1 (0)               ; 1 (0) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)                          ; 0 (0)              ; 0 (0)                         ; |Complemento2|Somador:inst|FullAdder:inst9           ; work         ;
-;          |Sum:inst|        ; 1 (1)               ; 1 (1) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |Complemento2|Somador:inst|FullAdder:inst9|Sum:inst  ; work         ;
-;       |FullAdder:inst|     ; 1 (0)               ; 1 (0) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)                          ; 0 (0)              ; 0 (0)                         ; |Complemento2|Somador:inst|FullAdder:inst            ; work         ;
-;          |Sum:inst|        ; 1 (1)               ; 1 (1) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |Complemento2|Somador:inst|FullAdder:inst|Sum:inst   ; work         ;
-+----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                              ;
++----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; ALMs  ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Combinational with no register ; Register-Only      ; Combinational with a register ; Full Hierarchy Name ; Library Name ;
+;                            ;                     ;       ;                           ;               ;                   ;       ;      ;        ;              ;         ;           ;           ;      ;              ; ALUT/register pair             ; ALUT/register pair ; ALUT/register pair            ;                     ;              ;
++----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
+; |AndVector                 ; 4 (4)               ; 4 (4) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 12   ; 0            ; 4 (4)                          ; 0 (0)              ; 0 (0)                         ; |AndVector          ; work         ;
++----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -877,52 +878,63 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
 ; Name   ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE      ; DQS bus ; NDQS bus ; DQS output ;
 +--------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
-; OUT[3] ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
-; OUT[2] ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
-; OUT[1] ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
-; OUT[0] ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
+; Out[3] ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
+; Out[2] ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
+; Out[1] ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
+; Out[0] ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
 ; A[3]   ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; A[2]   ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; B[3]   ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; A[2]   ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; B[2]   ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
 ; A[1]   ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; B[1]   ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
 ; A[0]   ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; B[0]   ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
 +--------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                    ;
-+-----------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                 ; Pad To Core Index ; Setting ;
-+-----------------------------------------------------+-------------------+---------+
-; A[3]                                                ;                   ;         ;
-;      - Somador:inst|FullAdder:inst|Sum:inst|inst1   ; 1                 ; 7       ;
-; A[2]                                                ;                   ;         ;
-;      - Somador:inst|FullAdder:inst|Sum:inst|inst1   ; 1                 ; 7       ;
-;      - Somador:inst|FullAdder:inst9|Sum:inst|inst1  ; 1                 ; 7       ;
-; A[1]                                                ;                   ;         ;
-;      - Somador:inst|FullAdder:inst|Sum:inst|inst1   ; 1                 ; 7       ;
-;      - Somador:inst|FullAdder:inst9|Sum:inst|inst1  ; 1                 ; 7       ;
-;      - Somador:inst|FullAdder:inst11|Sum:inst|inst1 ; 1                 ; 7       ;
-; A[0]                                                ;                   ;         ;
-;      - Somador:inst|FullAdder:inst|Sum:inst|inst1   ; 1                 ; 7       ;
-;      - Somador:inst|FullAdder:inst9|Sum:inst|inst1  ; 1                 ; 7       ;
-;      - Somador:inst|FullAdder:inst11|Sum:inst|inst1 ; 1                 ; 7       ;
-;      - OUT[0]                                       ; 1                 ; 7       ;
-+-----------------------------------------------------+-------------------+---------+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; A[3]                ;                   ;         ;
+;      - inst3        ; 1                 ; 7       ;
+; B[3]                ;                   ;         ;
+;      - inst3        ; 0                 ; 7       ;
+; A[2]                ;                   ;         ;
+;      - inst2        ; 0                 ; 7       ;
+; B[2]                ;                   ;         ;
+;      - inst2        ; 0                 ; 7       ;
+; A[1]                ;                   ;         ;
+;      - inst1        ; 0                 ; 7       ;
+; B[1]                ;                   ;         ;
+;      - inst1        ; 0                 ; 7       ;
+; A[0]                ;                   ;         ;
+;      - inst         ; 1                 ; 7       ;
+; B[0]                ;                   ;         ;
+;      - inst         ; 1                 ; 7       ;
++---------------------+-------------------+---------+
 
 
-+--------------------------------------------------------+
-; Non-Global High Fan-Out Signals                        ;
-+----------------------------------------------+---------+
-; Name                                         ; Fan-Out ;
-+----------------------------------------------+---------+
-; A[0]                                         ; 4       ;
-; A[1]                                         ; 3       ;
-; A[2]                                         ; 2       ;
-; A[3]                                         ; 1       ;
-; Somador:inst|FullAdder:inst11|Sum:inst|inst1 ; 1       ;
-; Somador:inst|FullAdder:inst9|Sum:inst|inst1  ; 1       ;
-; Somador:inst|FullAdder:inst|Sum:inst|inst1   ; 1       ;
-+----------------------------------------------+---------+
++---------------------------------+
+; Non-Global High Fan-Out Signals ;
++-------+-------------------------+
+; Name  ; Fan-Out                 ;
++-------+-------------------------+
+; B[0]  ; 1                       ;
+; A[0]  ; 1                       ;
+; B[1]  ; 1                       ;
+; A[1]  ; 1                       ;
+; B[2]  ; 1                       ;
+; A[2]  ; 1                       ;
+; B[3]  ; 1                       ;
+; A[3]  ; 1                       ;
+; inst  ; 1                       ;
+; inst1 ; 1                       ;
+; inst2 ; 1                       ;
+; inst3 ; 1                       ;
++-------+-------------------------+
 
 
 +-------------------------------------------------------------------+
@@ -930,8 +942,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+-----------------------+
 ; Interconnect Resource Type                ; Usage                 ;
 +-------------------------------------------+-----------------------+
-; Block interconnects                       ; 8 / 51,960 ( < 1 % )  ;
-; C16 interconnects                         ; 0 / 1,680 ( 0 % )     ;
+; Block interconnects                       ; 12 / 51,960 ( < 1 % ) ;
+; C16 interconnects                         ; 5 / 1,680 ( < 1 % )   ;
 ; C4 interconnects                          ; 13 / 38,400 ( < 1 % ) ;
 ; DPA clocks                                ; 0 / 4 ( 0 % )         ;
 ; DQS bus muxes                             ; 0 / 18 ( 0 % )        ;
@@ -939,7 +951,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DQS-4 I/O buses                           ; 0 / 18 ( 0 % )        ;
 ; DQS-9 I/O buses                           ; 0 / 8 ( 0 % )         ;
 ; Differential I/O clocks                   ; 0 / 32 ( 0 % )        ;
-; Direct links                              ; 0 / 51,960 ( 0 % )    ;
+; Direct links                              ; 1 / 51,960 ( < 1 % )  ;
 ; Global clocks                             ; 0 / 16 ( 0 % )        ;
 ; Local interconnects                       ; 0 / 12,480 ( 0 % )    ;
 ; NDQS bus muxes                            ; 0 / 18 ( 0 % )        ;
@@ -948,9 +960,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NDQS-9 I/O buses                          ; 0 / 8 ( 0 % )         ;
 ; PLL transmitter or receiver load enables  ; 0 / 8 ( 0 % )         ;
 ; PLL transmitter or receiver synch. clocks ; 0 / 8 ( 0 % )         ;
-; R24 interconnects                         ; 0 / 1,664 ( 0 % )     ;
-; R24/C16 interconnect drivers              ; 0 / 4,160 ( 0 % )     ;
-; R4 interconnects                          ; 14 / 59,488 ( < 1 % ) ;
+; R24 interconnects                         ; 1 / 1,664 ( < 1 % )   ;
+; R24/C16 interconnect drivers              ; 1 / 4,160 ( < 1 % )   ;
+; R4 interconnects                          ; 6 / 59,488 ( < 1 % )  ;
 ; Regional clocks                           ; 0 / 32 ( 0 % )        ;
 +-------------------------------------------+-----------------------+
 
@@ -958,10 +970,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------+
 ; LAB Logic Elements                                             ;
 +----------------------------------+-----------------------------+
-; Number of ALMs  (Average = 2.00) ; Number of LABs  (Total = 1) ;
+; Number of ALMs  (Average = 1.00) ; Number of LABs  (Total = 4) ;
 +----------------------------------+-----------------------------+
-; 1                                ; 0                           ;
-; 2                                ; 1                           ;
+; 1                                ; 4                           ;
+; 2                                ; 0                           ;
 ; 3                                ; 0                           ;
 ; 4                                ; 0                           ;
 ; 5                                ; 0                           ;
@@ -974,37 +986,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 3.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 1.00) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 1                           ;
+; 1                                           ; 4                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 3.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced Out  (Average = 1.00) ; Number of LABs  (Total = 4) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 1                           ;
+; 1                                               ; 4                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 4.00) ; Number of LABs  (Total = 1) ;
+; Number of Distinct Inputs  (Average = 2.00) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
+; 2                                           ; 4                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1065,18 +1071,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000032    ; IO_000033 ; IO_000034    ; IO_000037    ; IO_000038    ; IO_000042    ; IO_000040    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 8         ; 0            ; 0            ; 8         ; 8         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 8         ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 12        ; 0            ; 0            ; 12        ; 12        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 12        ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 8            ; 8            ; 8            ; 8            ; 8            ; 0         ; 8            ; 8            ; 0         ; 0         ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ; 0         ; 8            ; 8            ; 8            ; 8            ; 8            ;
+; Total Inapplicable ; 12           ; 12           ; 12           ; 12           ; 12           ; 0         ; 12           ; 12           ; 0         ; 0         ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 12           ; 0         ; 12           ; 12           ; 12           ; 12           ; 12           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; OUT[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; OUT[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; OUT[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; OUT[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Out[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Out[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Out[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Out[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; B[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; B[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; B[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; B[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -1127,7 +1137,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Oct 05 13:42:35 2018
+    Info: Processing started: Fri Oct 05 14:23:25 2018
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off ULA_project -c ULA_project
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Automatically selected device EP2S15F484C3 for design ULA_project
@@ -1135,15 +1145,19 @@ Info: Fitter is performing an Auto Fit compilation, which may decrease Fitter ef
 Info: Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
 Info: Fitter converted 1 user pins into dedicated programming pins
     Info: Pin ~DATA0~ is reserved at location E13
-Critical Warning: No exact pin location assignment(s) for 8 pins of 8 total pins
-    Info: Pin OUT[3] not assigned to an exact location on the device
-    Info: Pin OUT[2] not assigned to an exact location on the device
-    Info: Pin OUT[1] not assigned to an exact location on the device
-    Info: Pin OUT[0] not assigned to an exact location on the device
+Critical Warning: No exact pin location assignment(s) for 12 pins of 12 total pins
+    Info: Pin Out[3] not assigned to an exact location on the device
+    Info: Pin Out[2] not assigned to an exact location on the device
+    Info: Pin Out[1] not assigned to an exact location on the device
+    Info: Pin Out[0] not assigned to an exact location on the device
     Info: Pin A[3] not assigned to an exact location on the device
+    Info: Pin B[3] not assigned to an exact location on the device
     Info: Pin A[2] not assigned to an exact location on the device
+    Info: Pin B[2] not assigned to an exact location on the device
     Info: Pin A[1] not assigned to an exact location on the device
+    Info: Pin B[1] not assigned to an exact location on the device
     Info: Pin A[0] not assigned to an exact location on the device
+    Info: Pin B[0] not assigned to an exact location on the device
 Warning: Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info: Timing-driven compilation is using the Classic Timing Analyzer
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
@@ -1151,7 +1165,7 @@ Info: Starting register packing
 Info: Finished register packing
     Extra Info: No registers were packed into other blocks
 Info: Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info: Number of I/O pins in group: 8 (unused VREF, 3.3V VCCIO, 4 input, 4 output, 0 bidirectional)
+    Info: Number of I/O pins in group: 12 (unused VREF, 3.3V VCCIO, 8 input, 4 output, 0 bidirectional)
         Info: I/O standards used: 3.3-V LVTTL.
 Info: I/O bank details before I/O pin placement
     Info: Statistics of I/O banks
@@ -1173,25 +1187,25 @@ Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:00
 Info: Fitter routing operations beginning
 Info: Average interconnect usage is 0% of the available device resources
-    Info: Peak interconnect usage is 0% of the available device resources in the region that extends from location X13_Y0 to location X26_Y13
+    Info: Peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y0 to location X12_Y13
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
     Info: Optimizations that may affect the design's timing were skipped
 Info: Started post-fitting delay annotation
 Warning: Found 4 output pins without output pin load capacitance assignment
-    Info: Pin "OUT[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "OUT[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "OUT[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "OUT[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "Out[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "Out[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "Out[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "Out[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info: Delay annotation completed successfully
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Generated suppressed messages file C:/Users/mbmt/Downloads/projeto1SD/ULA_project.fit.smsg
 Info: Quartus II Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 407 megabytes
-    Info: Processing ended: Fri Oct 05 13:42:39 2018
+    Info: Processing ended: Fri Oct 05 14:23:29 2018
     Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+

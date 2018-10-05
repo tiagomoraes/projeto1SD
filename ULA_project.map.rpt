@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA_project
-Fri Oct 05 13:42:34 2018
+Fri Oct 05 14:23:24 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Fri Oct 05 13:42:34 2018        ;
+; Analysis & Synthesis Status   ; Successful - Fri Oct 05 14:23:24 2018        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ULA_project                                  ;
-; Top-level Entity Name         ; Complemento2                                 ;
+; Top-level Entity Name         ; AndVector                                    ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 3                                            ;
+;     Combinational ALUTs       ; 4                                            ;
 ;     Dedicated logic registers ; 0                                            ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 8                                            ;
+; Total pins                    ; 12                                           ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
 ; DSP block 9-bit elements      ; 0                                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; Complemento2       ; ULA_project        ;
+; Top-level entity name                                                      ; AndVector          ; ULA_project        ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -155,74 +155,61 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                     ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
-; Somador/FullAdder.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/Somador/FullAdder.bdf         ;
-; Somador/MUX2x1.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/Somador/MUX2x1.bdf            ;
-; Somador/Sum.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/Somador/Sum.bdf               ;
-; Somador/CarryOut.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/Somador/CarryOut.bdf          ;
-; Somador/Somador.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/Somador/Somador.bdf           ;
-; Complemento2/Complemento2.bdf    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/Complemento2/Complemento2.bdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------+
+; And/AndVector.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/And/AndVector.bdf ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+-----------------------------------------------+-------+
-; Resource                                      ; Usage ;
-+-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 3     ;
-; Dedicated logic registers                     ; 0     ;
-;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 0     ;
-;                                               ;       ;
-; Total combinational functions                 ; 3     ;
-; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 0     ;
-;     -- 6 input functions                      ; 0     ;
-;     -- 5 input functions                      ; 0     ;
-;     -- 4 input functions                      ; 1     ;
-;     -- <=3 input functions                    ; 2     ;
-;                                               ;       ;
-; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 3     ;
-;     -- extended LUT mode                      ; 0     ;
-;     -- arithmetic mode                        ; 0     ;
-;     -- shared arithmetic mode                 ; 0     ;
-;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 3     ;
-;                                               ;       ;
-; Total registers                               ; 0     ;
-;     -- Dedicated logic registers              ; 0     ;
-;     -- I/O registers                          ; 0     ;
-;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 2     ;
-;                                               ;       ;
-; I/O pins                                      ; 8     ;
-; Maximum fan-out node                          ; A[0]  ;
-; Maximum fan-out                               ; 4     ;
-; Total fan-out                                 ; 13    ;
-; Average fan-out                               ; 1.18  ;
-+-----------------------------------------------+-------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++----------------------------------------------+-------+
+; Resource                                     ; Usage ;
++----------------------------------------------+-------+
+; Estimated ALUTs Used                         ; 4     ;
+; Dedicated logic registers                    ; 0     ;
+;                                              ;       ;
+; Estimated ALUTs Unavailable                  ; 0     ;
+;                                              ;       ;
+; Total combinational functions                ; 4     ;
+; Combinational ALUT usage by number of inputs ;       ;
+;     -- 7 input functions                     ; 0     ;
+;     -- 6 input functions                     ; 0     ;
+;     -- 5 input functions                     ; 0     ;
+;     -- 4 input functions                     ; 0     ;
+;     -- <=3 input functions                   ; 4     ;
+;                                              ;       ;
+; Combinational ALUTs by mode                  ;       ;
+;     -- normal mode                           ; 4     ;
+;     -- extended LUT mode                     ; 0     ;
+;     -- arithmetic mode                       ; 0     ;
+;     -- shared arithmetic mode                ; 0     ;
+;                                              ;       ;
+; Estimated ALUT/register pairs used           ; 0     ;
+;                                              ;       ;
+; Total registers                              ; 0     ;
+;     -- Dedicated logic registers             ; 0     ;
+;     -- I/O registers                         ; 0     ;
+;                                              ;       ;
+;                                              ;       ;
+; I/O pins                                     ; 12    ;
+; Maximum fan-out node                         ; inst3 ;
+; Maximum fan-out                              ; 1     ;
+; Total fan-out                                ; 12    ;
+; Average fan-out                              ; 0.75  ;
++----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------+--------------+
-; |Complemento2              ; 3 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 8    ; 0            ; |Complemento2                                        ; work         ;
-;    |Somador:inst|          ; 3 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Complemento2|Somador:inst                           ;              ;
-;       |FullAdder:inst11|   ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Complemento2|Somador:inst|FullAdder:inst11          ; work         ;
-;          |Sum:inst|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Complemento2|Somador:inst|FullAdder:inst11|Sum:inst ; work         ;
-;       |FullAdder:inst9|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Complemento2|Somador:inst|FullAdder:inst9           ; work         ;
-;          |Sum:inst|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Complemento2|Somador:inst|FullAdder:inst9|Sum:inst  ; work         ;
-;       |FullAdder:inst|     ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Complemento2|Somador:inst|FullAdder:inst            ; work         ;
-;          |Sum:inst|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Complemento2|Somador:inst|FullAdder:inst|Sum:inst   ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |AndVector                 ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 12   ; 0            ; |AndVector          ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -247,7 +234,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Oct 05 13:42:33 2018
+    Info: Processing started: Fri Oct 05 14:23:23 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA_project -c ULA_project
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file somador/fulladder.bdf
@@ -266,19 +253,16 @@ Info: Found 1 design units, including 1 entities, in source file somador/somador
     Info: Found entity 1: Somador
 Info: Found 1 design units, including 1 entities, in source file complemento2/complemento2.bdf
     Info: Found entity 1: Complemento2
-Info: Elaborating entity "Complemento2" for the top level hierarchy
-Info: Elaborating entity "Somador" for hierarchy "Somador:inst"
-Info: Elaborating entity "FullAdder" for hierarchy "Somador:inst|FullAdder:inst9"
-Info: Elaborating entity "Sum" for hierarchy "Somador:inst|FullAdder:inst9|Sum:inst"
-Info: Elaborating entity "CarryOut" for hierarchy "Somador:inst|FullAdder:inst9|CarryOut:inst2"
-Info: Elaborating entity "MUX2x1" for hierarchy "Somador:inst|MUX2x1:inst3"
-Info: Implemented 11 device resources after synthesis - the final resource count might be different
-    Info: Implemented 4 input pins
+Info: Found 1 design units, including 1 entities, in source file and/andvector.bdf
+    Info: Found entity 1: AndVector
+Info: Elaborating entity "AndVector" for the top level hierarchy
+Info: Implemented 16 device resources after synthesis - the final resource count might be different
+    Info: Implemented 8 input pins
     Info: Implemented 4 output pins
-    Info: Implemented 3 logic cells
+    Info: Implemented 4 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 279 megabytes
-    Info: Processing ended: Fri Oct 05 13:42:34 2018
+    Info: Peak virtual memory: 278 megabytes
+    Info: Processing ended: Fri Oct 05 14:23:24 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 

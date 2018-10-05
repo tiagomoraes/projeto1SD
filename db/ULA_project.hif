@@ -33,9 +33,6 @@ somador|somador.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Somador:inst
-}
 # macro_sequence
 
 # end
@@ -52,12 +49,6 @@ somador|fulladder.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Somador:inst|FullAdder:inst9
-Somador:inst|FullAdder:inst11
-Somador:inst|FullAdder:inst14
-Somador:inst|FullAdder:inst
 }
 # macro_sequence
 
@@ -76,12 +67,6 @@ somador|sum.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Somador:inst|FullAdder:inst9|Sum:inst
-Somador:inst|FullAdder:inst11|Sum:inst
-Somador:inst|FullAdder:inst14|Sum:inst
-Somador:inst|FullAdder:inst|Sum:inst
-}
 # macro_sequence
 
 # end
@@ -98,12 +83,6 @@ somador|carryout.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Somador:inst|FullAdder:inst9|CarryOut:inst2
-Somador:inst|FullAdder:inst11|CarryOut:inst2
-Somador:inst|FullAdder:inst14|CarryOut:inst2
-Somador:inst|FullAdder:inst|CarryOut:inst2
 }
 # macro_sequence
 
@@ -122,12 +101,6 @@ eea6bddb6807ccd47bdce415e22be7a
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Somador:inst|MUX2x1:inst3
-Somador:inst|MUX2x1:inst4
-Somador:inst|MUX2x1:inst5
-Somador:inst|MUX2x1:inst2
-}
 # macro_sequence
 
 # end
@@ -140,6 +113,23 @@ db|ULA_project.(0).cnf
 # source_file
 complemento2|complemento2.bdf
 73b3f21c546e31dea0ef3163c2a4b260
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+AndVector
+# storage
+db|ULA_project.(6).cnf
+db|ULA_project.(6).cnf
+# case_insensitive
+# source_file
+and|andvector.bdf
+7acfe4526bc9922b7c90d7da2c9fd4
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for ULA_project
-Fri Oct 05 13:42:44 2018
+Fri Oct 05 14:23:33 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time ; From ; To     ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 10.081 ns   ; A[1] ; OUT[1] ; --         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 8.837 ns    ; B[1] ; Out[1] ; --         ; --       ; 0            ;
 ; Total number of failed paths ;       ;               ;             ;      ;        ;            ;          ; 0            ;
 +------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
 
@@ -98,16 +98,14 @@ applicable agreement for further details.
 +-------+-------------------+-----------------+------+--------+
 ; Slack ; Required P2P Time ; Actual P2P Time ; From ; To     ;
 +-------+-------------------+-----------------+------+--------+
-; N/A   ; None              ; 10.081 ns       ; A[1] ; OUT[1] ;
-; N/A   ; None              ; 9.982 ns        ; A[0] ; OUT[1] ;
-; N/A   ; None              ; 8.228 ns        ; A[1] ; OUT[3] ;
-; N/A   ; None              ; 8.191 ns        ; A[1] ; OUT[2] ;
-; N/A   ; None              ; 8.182 ns        ; A[2] ; OUT[3] ;
-; N/A   ; None              ; 8.145 ns        ; A[2] ; OUT[2] ;
-; N/A   ; None              ; 8.078 ns        ; A[0] ; OUT[3] ;
-; N/A   ; None              ; 7.857 ns        ; A[3] ; OUT[3] ;
-; N/A   ; None              ; 7.825 ns        ; A[0] ; OUT[2] ;
-; N/A   ; None              ; 6.893 ns        ; A[0] ; OUT[0] ;
+; N/A   ; None              ; 8.837 ns        ; B[1] ; Out[1] ;
+; N/A   ; None              ; 8.644 ns        ; A[0] ; Out[0] ;
+; N/A   ; None              ; 8.175 ns        ; B[3] ; Out[3] ;
+; N/A   ; None              ; 8.153 ns        ; A[1] ; Out[1] ;
+; N/A   ; None              ; 7.651 ns        ; B[2] ; Out[2] ;
+; N/A   ; None              ; 7.627 ns        ; A[3] ; Out[3] ;
+; N/A   ; None              ; 7.392 ns        ; B[0] ; Out[0] ;
+; N/A   ; None              ; 7.155 ns        ; A[2] ; Out[2] ;
 +-------+-------------------+-----------------+------+--------+
 
 
@@ -117,19 +115,19 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Oct 05 13:42:44 2018
+    Info: Processing started: Fri Oct 05 14:23:33 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ULA_project -c ULA_project --timing_analysis_only
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info: Longest tpd from source pin "A[1]" to destination pin "OUT[1]" is 10.081 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.772 ns) = 0.772 ns; Loc. = PIN_AA10; Fanout = 3; PIN Node = 'A[1]'
-    Info: 2: + IC(3.739 ns) + CELL(0.154 ns) = 4.665 ns; Loc. = LCCOMB_X25_Y1_N22; Fanout = 1; COMB Node = 'Somador:inst|FullAdder:inst11|Sum:inst|inst1'
-    Info: 3: + IC(3.474 ns) + CELL(1.942 ns) = 10.081 ns; Loc. = PIN_G14; Fanout = 0; PIN Node = 'OUT[1]'
-    Info: Total cell delay = 2.868 ns ( 28.45 % )
-    Info: Total interconnect delay = 7.213 ns ( 71.55 % )
+Info: Longest tpd from source pin "B[1]" to destination pin "Out[1]" is 8.837 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.799 ns) = 0.799 ns; Loc. = PIN_W9; Fanout = 1; PIN Node = 'B[1]'
+    Info: 2: + IC(4.823 ns) + CELL(0.357 ns) = 5.979 ns; Loc. = LCCOMB_X31_Y20_N16; Fanout = 1; COMB Node = 'inst1'
+    Info: 3: + IC(0.876 ns) + CELL(1.982 ns) = 8.837 ns; Loc. = PIN_B6; Fanout = 0; PIN Node = 'Out[1]'
+    Info: Total cell delay = 3.138 ns ( 35.51 % )
+    Info: Total interconnect delay = 5.699 ns ( 64.49 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 238 megabytes
-    Info: Processing ended: Fri Oct 05 13:42:44 2018
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Fri Oct 05 14:23:34 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
