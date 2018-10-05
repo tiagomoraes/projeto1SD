@@ -1,0 +1,155 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Somador
+# storage
+db|ULA_project.(1).cnf
+db|ULA_project.(1).cnf
+# case_insensitive
+# source_file
+somador|somador.bdf
+8e4767aff29c7bbfb7b212997f9f727
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst
+}
+# macro_sequence
+
+# end
+# entity
+FullAdder
+# storage
+db|ULA_project.(2).cnf
+db|ULA_project.(2).cnf
+# case_insensitive
+# source_file
+somador|fulladder.bdf
+51ebdff729e8e9ea4b034f4c6f06ddf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst|FullAdder:inst9
+Somador:inst|FullAdder:inst11
+Somador:inst|FullAdder:inst14
+Somador:inst|FullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+Sum
+# storage
+db|ULA_project.(3).cnf
+db|ULA_project.(3).cnf
+# case_insensitive
+# source_file
+somador|sum.bdf
+7125d52e5c9e92c20159b5c72f6f1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst|FullAdder:inst9|Sum:inst
+Somador:inst|FullAdder:inst11|Sum:inst
+Somador:inst|FullAdder:inst14|Sum:inst
+Somador:inst|FullAdder:inst|Sum:inst
+}
+# macro_sequence
+
+# end
+# entity
+CarryOut
+# storage
+db|ULA_project.(4).cnf
+db|ULA_project.(4).cnf
+# case_insensitive
+# source_file
+somador|carryout.bdf
+85e3863947743223b9195c60d1539b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst|FullAdder:inst9|CarryOut:inst2
+Somador:inst|FullAdder:inst11|CarryOut:inst2
+Somador:inst|FullAdder:inst14|CarryOut:inst2
+Somador:inst|FullAdder:inst|CarryOut:inst2
+}
+# macro_sequence
+
+# end
+# entity
+MUX2x1
+# storage
+db|ULA_project.(5).cnf
+db|ULA_project.(5).cnf
+# case_insensitive
+# source_file
+somador|mux2x1.bdf
+eea6bddb6807ccd47bdce415e22be7a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst|MUX2x1:inst3
+Somador:inst|MUX2x1:inst4
+Somador:inst|MUX2x1:inst5
+Somador:inst|MUX2x1:inst2
+}
+# macro_sequence
+
+# end
+# entity
+Complemento2
+# storage
+db|ULA_project.(0).cnf
+db|ULA_project.(0).cnf
+# case_insensitive
+# source_file
+complemento2|complemento2.bdf
+73b3f21c546e31dea0ef3163c2a4b260
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
