@@ -50,9 +50,6 @@ somador|fulladder.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -69,9 +66,6 @@ somador|sum.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Sum:inst
 }
 # macro_sequence
 
@@ -90,8 +84,48 @@ somador|carryout.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+Igual
+# storage
+db|ULA_project.(4).cnf
+db|ULA_project.(4).cnf
+# case_insensitive
+# source_file
+igual|igual.bdf
+3e3b52f4dcc269d24a8012c1715c3240
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-CarryOut:inst2
+|
+}
+# macro_sequence
+
+# end
+# entity
+IgualBit
+# storage
+db|ULA_project.(5).cnf
+db|ULA_project.(5).cnf
+# case_insensitive
+# source_file
+igual|igualbit.bdf
+7f6a519696b6fcdf18c5ecfe8a2e68
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+IgualBit:inst
+IgualBit:inst1
+IgualBit:inst2
+IgualBit:inst3
 }
 # macro_sequence
 
