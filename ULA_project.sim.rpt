@@ -1,5 +1,5 @@
 Simulator report for ULA_project
-Fri Oct 05 14:24:35 2018
+Fri Oct 05 14:44:32 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -47,7 +47,7 @@ applicable agreement for further details.
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 16 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 1898         ;
+; Total Number of Transitions ; 2858         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -110,22 +110,22 @@ The following table displays output ports that toggle between 1 and 0 during sim
 +-------------------+-------------------+------------------+
 ; Node Name         ; Output Port Name  ; Output Port Type ;
 +-------------------+-------------------+------------------+
-; |AndVector|Out[3] ; |AndVector|Out[3] ; pin_out          ;
-; |AndVector|Out[2] ; |AndVector|Out[2] ; pin_out          ;
-; |AndVector|Out[1] ; |AndVector|Out[1] ; pin_out          ;
-; |AndVector|Out[0] ; |AndVector|Out[0] ; pin_out          ;
-; |AndVector|inst   ; |AndVector|inst   ; out0             ;
-; |AndVector|A[3]   ; |AndVector|A[3]   ; out              ;
-; |AndVector|A[2]   ; |AndVector|A[2]   ; out              ;
-; |AndVector|A[1]   ; |AndVector|A[1]   ; out              ;
-; |AndVector|A[0]   ; |AndVector|A[0]   ; out              ;
-; |AndVector|B[3]   ; |AndVector|B[3]   ; out              ;
-; |AndVector|B[2]   ; |AndVector|B[2]   ; out              ;
-; |AndVector|B[1]   ; |AndVector|B[1]   ; out              ;
-; |AndVector|B[0]   ; |AndVector|B[0]   ; out              ;
-; |AndVector|inst1  ; |AndVector|inst1  ; out0             ;
-; |AndVector|inst2  ; |AndVector|inst2  ; out0             ;
-; |AndVector|inst3  ; |AndVector|inst3  ; out0             ;
+; |XorVector|Out[3] ; |XorVector|Out[3] ; pin_out          ;
+; |XorVector|Out[2] ; |XorVector|Out[2] ; pin_out          ;
+; |XorVector|Out[1] ; |XorVector|Out[1] ; pin_out          ;
+; |XorVector|Out[0] ; |XorVector|Out[0] ; pin_out          ;
+; |XorVector|inst3  ; |XorVector|inst3  ; out0             ;
+; |XorVector|A[3]   ; |XorVector|A[3]   ; out              ;
+; |XorVector|A[2]   ; |XorVector|A[2]   ; out              ;
+; |XorVector|A[1]   ; |XorVector|A[1]   ; out              ;
+; |XorVector|A[0]   ; |XorVector|A[0]   ; out              ;
+; |XorVector|B[3]   ; |XorVector|B[3]   ; out              ;
+; |XorVector|B[2]   ; |XorVector|B[2]   ; out              ;
+; |XorVector|B[1]   ; |XorVector|B[1]   ; out              ;
+; |XorVector|B[0]   ; |XorVector|B[0]   ; out              ;
+; |XorVector|inst1  ; |XorVector|inst1  ; out0             ;
+; |XorVector|inst2  ; |XorVector|inst2  ; out0             ;
+; |XorVector|inst   ; |XorVector|inst   ; out0             ;
 +-------------------+-------------------+------------------+
 
 
@@ -158,17 +158,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Oct 05 14:24:34 2018
+    Info: Processing started: Fri Oct 05 14:44:32 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA_project -c ULA_project
 Info: Using vector source file "And/AndVectorWF.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 1898
+Info: Number of transitions in simulation is 2858
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 206 megabytes
-    Info: Processing ended: Fri Oct 05 14:24:35 2018
+    Info: Processing ended: Fri Oct 05 14:44:33 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

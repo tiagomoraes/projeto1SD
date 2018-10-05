@@ -135,6 +135,23 @@ and|andvector.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+XorVector
+# storage
+db|ULA_project.(7).cnf
+db|ULA_project.(7).cnf
+# case_insensitive
+# source_file
+xor|xorvector.bdf
+f465688aadf9df25aa511fe5a9cad5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
 }

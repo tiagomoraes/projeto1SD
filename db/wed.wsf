@@ -583,7 +583,7 @@ VECTOR("C:/Users/mbmt/Downloads/projeto1SD/db/ULA_project.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 1000000;
+		ZEND = 64300;
 		NUMERATOR = 20;
 		DENOMINATOR = 1000;
 		TOP_INDEX = 0;

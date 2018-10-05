@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA_project
-Fri Oct 05 14:23:24 2018
+Fri Oct 05 14:35:58 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,10 +40,10 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Fri Oct 05 14:23:24 2018        ;
+; Analysis & Synthesis Status   ; Successful - Fri Oct 05 14:35:58 2018        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ULA_project                                  ;
-; Top-level Entity Name         ; AndVector                                    ;
+; Top-level Entity Name         ; XorVector                                    ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
 ;     Combinational ALUTs       ; 4                                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; AndVector          ; ULA_project        ;
+; Top-level entity name                                                      ; XorVector          ; ULA_project        ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -160,7 +160,7 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------+
-; And/AndVector.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/And/AndVector.bdf ;
+; Xor/XorVector.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mbmt/Downloads/projeto1SD/Xor/XorVector.bdf ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------+
 
 
@@ -196,7 +196,7 @@ applicable agreement for further details.
 ;                                              ;       ;
 ;                                              ;       ;
 ; I/O pins                                     ; 12    ;
-; Maximum fan-out node                         ; inst3 ;
+; Maximum fan-out node                         ; inst2 ;
 ; Maximum fan-out                              ; 1     ;
 ; Total fan-out                                ; 12    ;
 ; Average fan-out                              ; 0.75  ;
@@ -208,7 +208,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |AndVector                 ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 12   ; 0            ; |AndVector          ; work         ;
+; |XorVector                 ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 12   ; 0            ; |XorVector          ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -234,7 +234,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Oct 05 14:23:23 2018
+    Info: Processing started: Fri Oct 05 14:35:57 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA_project -c ULA_project
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file somador/fulladder.bdf
@@ -255,14 +255,16 @@ Info: Found 1 design units, including 1 entities, in source file complemento2/co
     Info: Found entity 1: Complemento2
 Info: Found 1 design units, including 1 entities, in source file and/andvector.bdf
     Info: Found entity 1: AndVector
-Info: Elaborating entity "AndVector" for the top level hierarchy
+Info: Found 1 design units, including 1 entities, in source file xor/xorvector.bdf
+    Info: Found entity 1: XorVector
+Info: Elaborating entity "XorVector" for the top level hierarchy
 Info: Implemented 16 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
     Info: Implemented 4 output pins
     Info: Implemented 4 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 278 megabytes
-    Info: Processing ended: Fri Oct 05 14:23:24 2018
+    Info: Processing ended: Fri Oct 05 14:35:58 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
