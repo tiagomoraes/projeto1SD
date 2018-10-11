@@ -33,6 +33,9 @@ somador|somador.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+Somador:inst
+}
 # macro_sequence
 
 # end
@@ -49,6 +52,12 @@ somador|fulladder.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+Somador:inst|FullAdder:inst9
+Somador:inst|FullAdder:inst11
+Somador:inst|FullAdder:inst14
+Somador:inst|FullAdder:inst
 }
 # macro_sequence
 
@@ -67,6 +76,12 @@ somador|sum.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+Somador:inst|FullAdder:inst9|Sum:inst
+Somador:inst|FullAdder:inst11|Sum:inst
+Somador:inst|FullAdder:inst14|Sum:inst
+Somador:inst|FullAdder:inst|Sum:inst
+}
 # macro_sequence
 
 # end
@@ -83,6 +98,12 @@ somador|carryout.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+Somador:inst|FullAdder:inst9|CarryOut:inst2
+Somador:inst|FullAdder:inst11|CarryOut:inst2
+Somador:inst|FullAdder:inst14|CarryOut:inst2
+Somador:inst|FullAdder:inst|CarryOut:inst2
 }
 # macro_sequence
 
@@ -101,22 +122,11 @@ eea6bddb6807ccd47bdce415e22be7a
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# macro_sequence
-
-# end
-# entity
-Complemento2
-# storage
-db|ULA_project.(0).cnf
-db|ULA_project.(0).cnf
-# case_insensitive
-# source_file
-complemento2|complemento2.bdf
-73b3f21c546e31dea0ef3163c2a4b260
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+# hierarchies {
+Somador:inst|MUX2x1:inst3
+Somador:inst|MUX2x1:inst4
+Somador:inst|MUX2x1:inst5
+Somador:inst|MUX2x1:inst2
 }
 # macro_sequence
 
@@ -147,6 +157,91 @@ db|ULA_project.(7).cnf
 # source_file
 xor|xorvector.bdf
 f465688aadf9df25aa511fe5a9cad5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MaiorBit
+# storage
+db|ULA_project.(9).cnf
+db|ULA_project.(9).cnf
+# case_insensitive
+# source_file
+maior|maiorbit.bdf
+9699eb82246f56bdbaf21b80e405b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Maior
+# storage
+db|ULA_project.(8).cnf
+db|ULA_project.(8).cnf
+# case_insensitive
+# source_file
+maior|maior.bdf
+4359ef953ffaa28e7e69ed289e1cacef
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Menor
+# storage
+db|ULA_project.(0).cnf
+db|ULA_project.(0).cnf
+# case_insensitive
+# source_file
+menor|menor.bdf
+e6e84b11d71013eeb14dd3186fc94bf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MenorBit
+# storage
+db|ULA_project.(10).cnf
+db|ULA_project.(10).cnf
+# case_insensitive
+# source_file
+menor|menorbit.bdf
+de2b5ef311c0e8d73d1fc9d266d2e7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Complemento2
+# storage
+db|ULA_project.(11).cnf
+db|ULA_project.(11).cnf
+# case_insensitive
+# source_file
+complemento2|complemento2.bdf
+83cb5b27225d3a3b3a43d457a9286f8
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
