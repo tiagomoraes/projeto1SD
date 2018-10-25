@@ -1,184 +1,34 @@
-|BCD
-Cout <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => FullAdder:inst.A
-A[1] => FullAdder:inst2.A
-A[2] => FullAdder:inst3.A
-A[3] => FullAdder:inst4.A
-B[0] => FullAdder:inst.B
-B[1] => FullAdder:inst2.B
-B[2] => FullAdder:inst3.B
-B[3] => FullAdder:inst4.B
-Sum[0] <= FullAdder:inst.S
-Sum[1] <= FullAdder:inst7.S
-Sum[2] <= FullAdder:inst6.S
-Sum[3] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|BCD|FullAdder:inst3
-S <= Sum:inst.S
-A => Sum:inst.A
-A => CarryOut:inst2.A
-B => Sum:inst.B
-B => CarryOut:inst2.B
-Cin => Sum:inst.Cin
-Cin => CarryOut:inst2.Cin
-Cout <= CarryOut:inst2.Cout
-
-
-|BCD|FullAdder:inst3|Sum:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst.IN1
-Cin => inst1.IN1
-
-
-|BCD|FullAdder:inst3|CarryOut:inst2
-Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-B => inst2.IN0
-B => inst.IN1
-Cin => inst2.IN1
-Cin => inst3.IN1
-A => inst3.IN0
-A => inst.IN0
-
-
-|BCD|FullAdder:inst2
-S <= Sum:inst.S
-A => Sum:inst.A
-A => CarryOut:inst2.A
-B => Sum:inst.B
-B => CarryOut:inst2.B
-Cin => Sum:inst.Cin
-Cin => CarryOut:inst2.Cin
-Cout <= CarryOut:inst2.Cout
-
-
-|BCD|FullAdder:inst2|Sum:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst.IN1
-Cin => inst1.IN1
-
-
-|BCD|FullAdder:inst2|CarryOut:inst2
-Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-B => inst2.IN0
-B => inst.IN1
-Cin => inst2.IN1
-Cin => inst3.IN1
-A => inst3.IN0
-A => inst.IN0
-
-
-|BCD|FullAdder:inst
-S <= Sum:inst.S
-A => Sum:inst.A
-A => CarryOut:inst2.A
-B => Sum:inst.B
-B => CarryOut:inst2.B
-Cin => Sum:inst.Cin
-Cin => CarryOut:inst2.Cin
-Cout <= CarryOut:inst2.Cout
-
-
-|BCD|FullAdder:inst|Sum:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst.IN1
-Cin => inst1.IN1
-
-
-|BCD|FullAdder:inst|CarryOut:inst2
-Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-B => inst2.IN0
-B => inst.IN1
-Cin => inst2.IN1
-Cin => inst3.IN1
-A => inst3.IN0
-A => inst.IN0
-
-
-|BCD|FullAdder:inst4
-S <= Sum:inst.S
-A => Sum:inst.A
-A => CarryOut:inst2.A
-B => Sum:inst.B
-B => CarryOut:inst2.B
-Cin => Sum:inst.Cin
-Cin => CarryOut:inst2.Cin
-Cout <= CarryOut:inst2.Cout
-
-
-|BCD|FullAdder:inst4|Sum:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst.IN1
-Cin => inst1.IN1
-
-
-|BCD|FullAdder:inst4|CarryOut:inst2
-Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-B => inst2.IN0
-B => inst.IN1
-Cin => inst2.IN1
-Cin => inst3.IN1
-A => inst3.IN0
-A => inst.IN0
-
-
-|BCD|FullAdder:inst6
-S <= Sum:inst.S
-A => Sum:inst.A
-A => CarryOut:inst2.A
-B => Sum:inst.B
-B => CarryOut:inst2.B
-Cin => Sum:inst.Cin
-Cin => CarryOut:inst2.Cin
-Cout <= CarryOut:inst2.Cout
-
-
-|BCD|FullAdder:inst6|Sum:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst.IN1
-Cin => inst1.IN1
-
-
-|BCD|FullAdder:inst6|CarryOut:inst2
-Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-B => inst2.IN0
-B => inst.IN1
-Cin => inst2.IN1
-Cin => inst3.IN1
-A => inst3.IN0
-A => inst.IN0
-
-
-|BCD|FullAdder:inst7
-S <= Sum:inst.S
-A => Sum:inst.A
-A => CarryOut:inst2.A
-B => Sum:inst.B
-B => CarryOut:inst2.B
-Cin => Sum:inst.Cin
-Cin => CarryOut:inst2.Cin
-Cout <= CarryOut:inst2.Cout
-
-
-|BCD|FullAdder:inst7|Sum:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst.IN1
-Cin => inst1.IN1
-
-
-|BCD|FullAdder:inst7|CarryOut:inst2
-Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-B => inst2.IN0
-B => inst.IN1
-Cin => inst2.IN1
-Cin => inst3.IN1
-A => inst3.IN0
-A => inst.IN0
+|BCDSegments
+b <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => inst12.IN0
+in[0] => inst17.IN0
+in[0] => inst19.IN2
+in[0] => inst24.IN2
+in[0] => inst15.IN0
+in[1] => inst11.IN0
+in[1] => inst17.IN1
+in[1] => inst23.IN0
+in[1] => inst22.IN1
+in[1] => inst27.IN0
+in[1] => inst35.IN0
+in[1] => inst34.IN1
+in[1] => inst14.IN3
+in[2] => inst10.IN0
+in[2] => inst19.IN1
+in[2] => inst24.IN0
+in[2] => inst30.IN0
+in[2] => inst29.IN0
+in[2] => inst33.IN1
+in[2] => inst15.IN1
+in[3] => inst16.IN3
+in[3] => inst28.IN0
+in[3] => inst36.IN0
+in[3] => inst14.IN1
+c <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+a <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 
 

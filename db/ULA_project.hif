@@ -1,5 +1,5 @@
-Quartus II 64-Bit
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 7
 3700
 OFF
@@ -20,140 +20,14 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Complemento2
+BCDSegments
 # storage
 db|ULA_project.(0).cnf
 db|ULA_project.(0).cnf
 # case_insensitive
 # source_file
-complemento2|complemento2.bdf
-83cb5b27225d3a3b3a43d457a9286f8
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-Somador
-# storage
-db|ULA_project.(1).cnf
-db|ULA_project.(1).cnf
-# case_insensitive
-# source_file
-somador|somador.bdf
-8e4767aff29c7bbfb7b212997f9f727
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-FullAdder
-# storage
-db|ULA_project.(2).cnf
-db|ULA_project.(2).cnf
-# case_insensitive
-# source_file
-somador|fulladder.bdf
-51ebdff729e8e9ea4b034f4c6f06ddf
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-FullAdder:inst3
-FullAdder:inst2
-FullAdder:inst
-FullAdder:inst4
-FullAdder:inst6
-FullAdder:inst7
-}
-# macro_sequence
-
-# end
-# entity
-Sum
-# storage
-db|ULA_project.(3).cnf
-db|ULA_project.(3).cnf
-# case_insensitive
-# source_file
-somador|sum.bdf
-7125d52e5c9e92c20159b5c72f6f1
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-FullAdder:inst3|Sum:inst
-FullAdder:inst2|Sum:inst
-FullAdder:inst|Sum:inst
-FullAdder:inst4|Sum:inst
-FullAdder:inst6|Sum:inst
-FullAdder:inst7|Sum:inst
-}
-# macro_sequence
-
-# end
-# entity
-CarryOut
-# storage
-db|ULA_project.(4).cnf
-db|ULA_project.(4).cnf
-# case_insensitive
-# source_file
-somador|carryout.bdf
-85e3863947743223b9195c60d1539b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-FullAdder:inst3|CarryOut:inst2
-FullAdder:inst2|CarryOut:inst2
-FullAdder:inst|CarryOut:inst2
-FullAdder:inst4|CarryOut:inst2
-FullAdder:inst6|CarryOut:inst2
-FullAdder:inst7|CarryOut:inst2
-}
-# macro_sequence
-
-# end
-# entity
-MUX2x1
-# storage
-db|ULA_project.(5).cnf
-db|ULA_project.(5).cnf
-# case_insensitive
-# source_file
-somador|mux2x1.bdf
-eea6bddb6807ccd47bdce415e22be7a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-BCD
-# storage
-db|ULA_project.(6).cnf
-db|ULA_project.(6).cnf
-# case_insensitive
-# source_file
-somador|bcd.bdf
-a1b13b83fe647571f525e49361f57cc6
+somador|bcdsegments.bdf
+a957e97fcc56f0aae486c5b1e3664a8e
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

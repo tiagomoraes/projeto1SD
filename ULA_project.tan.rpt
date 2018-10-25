@@ -1,6 +1,6 @@
 Classic Timing Analyzer report for ULA_project
-Thu Oct 25 07:48:29 2018
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Thu Oct 25 17:51:21 2018
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -34,14 +34,14 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                   ;
-+------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From ; To     ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 11.181 ns   ; B[1] ; Sum[1] ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;      ;        ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                ;
++------------------------------+-------+---------------+-------------+-------+----+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From  ; To ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------+----+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 10.720 ns   ; in[3] ; b  ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;       ;    ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------+----+------------+----------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -93,67 +93,57 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------+
-; tpd                                                         ;
-+-------+-------------------+-----------------+------+--------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From ; To     ;
-+-------+-------------------+-----------------+------+--------+
-; N/A   ; None              ; 11.181 ns       ; B[1] ; Sum[1] ;
-; N/A   ; None              ; 10.966 ns       ; B[1] ; Sum[2] ;
-; N/A   ; None              ; 10.859 ns       ; A[1] ; Sum[1] ;
-; N/A   ; None              ; 10.684 ns       ; A[3] ; Sum[1] ;
-; N/A   ; None              ; 10.644 ns       ; A[1] ; Sum[2] ;
-; N/A   ; None              ; 10.593 ns       ; A[0] ; Sum[1] ;
-; N/A   ; None              ; 10.472 ns       ; A[3] ; Sum[2] ;
-; N/A   ; None              ; 10.378 ns       ; A[0] ; Sum[2] ;
-; N/A   ; None              ; 10.334 ns       ; B[0] ; Sum[1] ;
-; N/A   ; None              ; 10.119 ns       ; B[0] ; Sum[2] ;
-; N/A   ; None              ; 10.095 ns       ; B[2] ; Sum[1] ;
-; N/A   ; None              ; 10.034 ns       ; B[3] ; Sum[1] ;
-; N/A   ; None              ; 9.880 ns        ; B[2] ; Sum[2] ;
-; N/A   ; None              ; 9.819 ns        ; B[3] ; Sum[2] ;
-; N/A   ; None              ; 9.741 ns        ; B[1] ; Sum[3] ;
-; N/A   ; None              ; 9.714 ns        ; A[2] ; Sum[1] ;
-; N/A   ; None              ; 9.645 ns        ; A[0] ; Sum[0] ;
-; N/A   ; None              ; 9.557 ns        ; B[1] ; Cout   ;
-; N/A   ; None              ; 9.499 ns        ; A[2] ; Sum[2] ;
-; N/A   ; None              ; 9.488 ns        ; B[0] ; Sum[0] ;
-; N/A   ; None              ; 9.419 ns        ; A[1] ; Sum[3] ;
-; N/A   ; None              ; 9.247 ns        ; A[3] ; Sum[3] ;
-; N/A   ; None              ; 9.235 ns        ; A[1] ; Cout   ;
-; N/A   ; None              ; 9.154 ns        ; A[0] ; Sum[3] ;
-; N/A   ; None              ; 9.074 ns        ; A[3] ; Cout   ;
-; N/A   ; None              ; 8.969 ns        ; A[0] ; Cout   ;
-; N/A   ; None              ; 8.894 ns        ; B[0] ; Sum[3] ;
-; N/A   ; None              ; 8.710 ns        ; B[0] ; Cout   ;
-; N/A   ; None              ; 8.656 ns        ; B[2] ; Sum[3] ;
-; N/A   ; None              ; 8.595 ns        ; B[3] ; Sum[3] ;
-; N/A   ; None              ; 8.471 ns        ; B[2] ; Cout   ;
-; N/A   ; None              ; 8.421 ns        ; B[3] ; Cout   ;
-; N/A   ; None              ; 8.275 ns        ; A[2] ; Sum[3] ;
-; N/A   ; None              ; 8.096 ns        ; A[2] ; Cout   ;
-+-------+-------------------+-----------------+------+--------+
++----------------------------------------------------------+
+; tpd                                                      ;
++-------+-------------------+-----------------+-------+----+
+; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To ;
++-------+-------------------+-----------------+-------+----+
+; N/A   ; None              ; 10.720 ns       ; in[3] ; b  ;
+; N/A   ; None              ; 10.612 ns       ; in[0] ; c  ;
+; N/A   ; None              ; 10.454 ns       ; in[3] ; g  ;
+; N/A   ; None              ; 10.404 ns       ; in[3] ; a  ;
+; N/A   ; None              ; 10.393 ns       ; in[3] ; f  ;
+; N/A   ; None              ; 10.384 ns       ; in[0] ; b  ;
+; N/A   ; None              ; 10.131 ns       ; in[0] ; d  ;
+; N/A   ; None              ; 10.095 ns       ; in[0] ; a  ;
+; N/A   ; None              ; 10.088 ns       ; in[0] ; f  ;
+; N/A   ; None              ; 10.016 ns       ; in[0] ; g  ;
+; N/A   ; None              ; 9.848 ns        ; in[1] ; c  ;
+; N/A   ; None              ; 9.623 ns        ; in[1] ; b  ;
+; N/A   ; None              ; 9.381 ns        ; in[1] ; g  ;
+; N/A   ; None              ; 9.366 ns        ; in[1] ; d  ;
+; N/A   ; None              ; 9.333 ns        ; in[1] ; a  ;
+; N/A   ; None              ; 9.328 ns        ; in[1] ; f  ;
+; N/A   ; None              ; 8.790 ns        ; in[0] ; e  ;
+; N/A   ; None              ; 8.017 ns        ; in[1] ; e  ;
+; N/A   ; None              ; 7.029 ns        ; in[2] ; c  ;
+; N/A   ; None              ; 6.790 ns        ; in[2] ; b  ;
+; N/A   ; None              ; 6.555 ns        ; in[2] ; g  ;
+; N/A   ; None              ; 6.548 ns        ; in[2] ; d  ;
+; N/A   ; None              ; 6.506 ns        ; in[2] ; a  ;
+; N/A   ; None              ; 6.494 ns        ; in[2] ; f  ;
+; N/A   ; None              ; 5.070 ns        ; in[2] ; e  ;
++-------+-------------------+-----------------+-------+----+
 
 
 +--------------------------+
 ; Timing Analyzer Messages ;
 +--------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Classic Timing Analyzer
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Thu Oct 25 07:48:29 2018
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Oct 25 17:51:20 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ULA_project -c ULA_project --timing_analysis_only
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info: Longest tpd from source pin "B[1]" to destination pin "Sum[1]" is 11.181 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.809 ns) = 0.809 ns; Loc. = PIN_B12; Fanout = 2; PIN Node = 'B[1]'
-    Info: 2: + IC(4.608 ns) + CELL(0.366 ns) = 5.783 ns; Loc. = LCCOMB_X22_Y1_N2; Fanout = 4; COMB Node = 'FullAdder:inst2|CarryOut:inst2|inst4~0'
-    Info: 3: + IC(0.271 ns) + CELL(0.272 ns) = 6.326 ns; Loc. = LCCOMB_X22_Y1_N16; Fanout = 1; COMB Node = 'FullAdder:inst7|Sum:inst|inst'
-    Info: 4: + IC(2.873 ns) + CELL(1.982 ns) = 11.181 ns; Loc. = PIN_C16; Fanout = 0; PIN Node = 'Sum[1]'
-    Info: Total cell delay = 3.429 ns ( 30.67 % )
-    Info: Total interconnect delay = 7.752 ns ( 69.33 % )
-Info: Quartus II 64-Bit Classic Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 291 megabytes
-    Info: Processing ended: Thu Oct 25 07:48:30 2018
+Info: Longest tpd from source pin "in[3]" to destination pin "b" is 10.720 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.837 ns) = 0.837 ns; Loc. = PIN_Y14; Fanout = 4; PIN Node = 'in[3]'
+    Info: 2: + IC(5.046 ns) + CELL(0.228 ns) = 6.111 ns; Loc. = LCCOMB_X18_Y26_N18; Fanout = 1; COMB Node = 'inst16'
+    Info: 3: + IC(2.621 ns) + CELL(1.988 ns) = 10.720 ns; Loc. = PIN_W10; Fanout = 0; PIN Node = 'b'
+    Info: Total cell delay = 3.053 ns ( 28.48 % )
+    Info: Total interconnect delay = 7.667 ns ( 71.52 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 238 megabytes
+    Info: Processing ended: Thu Oct 25 17:51:21 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 

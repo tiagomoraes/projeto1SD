@@ -1,6 +1,6 @@
 Simulator report for ULA_project
-Thu Oct 25 07:54:42 2018
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Thu Oct 25 17:53:53 2018
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -45,48 +45,48 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 45 nodes     ;
+; Simulation Netlist Size     ; 35 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 22576        ;
+; Total Number of Transitions ; 16862        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                           ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
-; Option                                                                                     ; Setting         ; Default Value ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
-; Simulation mode                                                                            ; Functional      ; Timing        ;
-; Start time                                                                                 ; 0 ns            ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF            ;               ;
-; Vector input source                                                                        ; Somador/BCD.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
-; Check outputs                                                                              ; Off             ; Off           ;
-; Report simulation coverage                                                                 ; On              ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
-; Display missing 1-value coverage report                                                    ; On              ; On            ;
-; Display missing 0-value coverage report                                                    ; On              ; On            ;
-; Detect setup and hold time violations                                                      ; Off             ; Off           ;
-; Detect glitches                                                                            ; Off             ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
-; Generate Signal Activity File                                                              ; Off             ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
-; Group bus channels in simulation results                                                   ; Off             ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off             ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                     ;
++--------------------------------------------------------------------------------------------+---------------------------+---------------+
+; Option                                                                                     ; Setting                   ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------+---------------+
+; Simulation mode                                                                            ; Functional                ; Timing        ;
+; Start time                                                                                 ; 0 ns                      ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                      ;               ;
+; Vector input source                                                                        ; Somador/BCDSegmentsWF.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                        ; On            ;
+; Check outputs                                                                              ; Off                       ; Off           ;
+; Report simulation coverage                                                                 ; On                        ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                        ; On            ;
+; Display missing 1-value coverage report                                                    ; On                        ; On            ;
+; Display missing 0-value coverage report                                                    ; On                        ; On            ;
+; Detect setup and hold time violations                                                      ; Off                       ; Off           ;
+; Detect glitches                                                                            ; Off                       ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                       ; Off           ;
+; Generate Signal Activity File                                                              ; Off                       ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                       ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                       ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                        ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                       ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                       ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                      ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------+---------------+
 
 
 +----------------------+
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II 64-Bit to view the waveform report data.
+Please use Quartus II to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -95,9 +95,9 @@ Please use Quartus II 64-Bit to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 45           ;
-; Total output ports checked                          ; 45           ;
-; Total output ports with complete 1/0-value coverage ; 45           ;
+; Total nodes checked                                 ; 35           ;
+; Total output ports checked                          ; 35           ;
+; Total output ports with complete 1/0-value coverage ; 35           ;
 ; Total output ports with no 1/0-value coverage       ; 0            ;
 ; Total output ports with no 1-value coverage         ; 0            ;
 ; Total output ports with no 0-value coverage         ; 0            ;
@@ -105,57 +105,47 @@ Please use Quartus II 64-Bit to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                              ;
-+-------------------------------------------+-------------------------------------------+------------------+
-; Node Name                                 ; Output Port Name                          ; Output Port Type ;
-+-------------------------------------------+-------------------------------------------+------------------+
-; |BCD|Cout                                 ; |BCD|Cout                                 ; pin_out          ;
-; |BCD|inst10                               ; |BCD|inst10                               ; out0             ;
-; |BCD|inst11                               ; |BCD|inst11                               ; out0             ;
-; |BCD|A[3]                                 ; |BCD|A[3]                                 ; out              ;
-; |BCD|A[2]                                 ; |BCD|A[2]                                 ; out              ;
-; |BCD|A[1]                                 ; |BCD|A[1]                                 ; out              ;
-; |BCD|A[0]                                 ; |BCD|A[0]                                 ; out              ;
-; |BCD|B[3]                                 ; |BCD|B[3]                                 ; out              ;
-; |BCD|B[2]                                 ; |BCD|B[2]                                 ; out              ;
-; |BCD|B[1]                                 ; |BCD|B[1]                                 ; out              ;
-; |BCD|B[0]                                 ; |BCD|B[0]                                 ; out              ;
-; |BCD|inst12                               ; |BCD|inst12                               ; out0             ;
-; |BCD|Sum[3]                               ; |BCD|Sum[3]                               ; pin_out          ;
-; |BCD|Sum[2]                               ; |BCD|Sum[2]                               ; pin_out          ;
-; |BCD|Sum[1]                               ; |BCD|Sum[1]                               ; pin_out          ;
-; |BCD|Sum[0]                               ; |BCD|Sum[0]                               ; pin_out          ;
-; |BCD|inst9                                ; |BCD|inst9                                ; out0             ;
-; |BCD|FullAdder:inst7|CarryOut:inst2|inst  ; |BCD|FullAdder:inst7|CarryOut:inst2|inst  ; out0             ;
-; |BCD|FullAdder:inst7|Sum:inst|inst        ; |BCD|FullAdder:inst7|Sum:inst|inst        ; out0             ;
-; |BCD|FullAdder:inst6|CarryOut:inst2|inst4 ; |BCD|FullAdder:inst6|CarryOut:inst2|inst4 ; out0             ;
-; |BCD|FullAdder:inst6|CarryOut:inst2|inst2 ; |BCD|FullAdder:inst6|CarryOut:inst2|inst2 ; out0             ;
-; |BCD|FullAdder:inst6|CarryOut:inst2|inst3 ; |BCD|FullAdder:inst6|CarryOut:inst2|inst3 ; out0             ;
-; |BCD|FullAdder:inst6|CarryOut:inst2|inst  ; |BCD|FullAdder:inst6|CarryOut:inst2|inst  ; out0             ;
-; |BCD|FullAdder:inst6|Sum:inst|inst1       ; |BCD|FullAdder:inst6|Sum:inst|inst1       ; out0             ;
-; |BCD|FullAdder:inst6|Sum:inst|inst        ; |BCD|FullAdder:inst6|Sum:inst|inst        ; out0             ;
-; |BCD|FullAdder:inst4|CarryOut:inst2|inst4 ; |BCD|FullAdder:inst4|CarryOut:inst2|inst4 ; out0             ;
-; |BCD|FullAdder:inst4|CarryOut:inst2|inst2 ; |BCD|FullAdder:inst4|CarryOut:inst2|inst2 ; out0             ;
-; |BCD|FullAdder:inst4|CarryOut:inst2|inst3 ; |BCD|FullAdder:inst4|CarryOut:inst2|inst3 ; out0             ;
-; |BCD|FullAdder:inst4|CarryOut:inst2|inst  ; |BCD|FullAdder:inst4|CarryOut:inst2|inst  ; out0             ;
-; |BCD|FullAdder:inst4|Sum:inst|inst1       ; |BCD|FullAdder:inst4|Sum:inst|inst1       ; out0             ;
-; |BCD|FullAdder:inst4|Sum:inst|inst        ; |BCD|FullAdder:inst4|Sum:inst|inst        ; out0             ;
-; |BCD|FullAdder:inst|CarryOut:inst2|inst   ; |BCD|FullAdder:inst|CarryOut:inst2|inst   ; out0             ;
-; |BCD|FullAdder:inst|Sum:inst|inst         ; |BCD|FullAdder:inst|Sum:inst|inst         ; out0             ;
-; |BCD|FullAdder:inst2|CarryOut:inst2|inst4 ; |BCD|FullAdder:inst2|CarryOut:inst2|inst4 ; out0             ;
-; |BCD|FullAdder:inst2|CarryOut:inst2|inst2 ; |BCD|FullAdder:inst2|CarryOut:inst2|inst2 ; out0             ;
-; |BCD|FullAdder:inst2|CarryOut:inst2|inst3 ; |BCD|FullAdder:inst2|CarryOut:inst2|inst3 ; out0             ;
-; |BCD|FullAdder:inst2|CarryOut:inst2|inst  ; |BCD|FullAdder:inst2|CarryOut:inst2|inst  ; out0             ;
-; |BCD|FullAdder:inst2|Sum:inst|inst1       ; |BCD|FullAdder:inst2|Sum:inst|inst1       ; out0             ;
-; |BCD|FullAdder:inst2|Sum:inst|inst        ; |BCD|FullAdder:inst2|Sum:inst|inst        ; out0             ;
-; |BCD|FullAdder:inst3|CarryOut:inst2|inst4 ; |BCD|FullAdder:inst3|CarryOut:inst2|inst4 ; out0             ;
-; |BCD|FullAdder:inst3|CarryOut:inst2|inst2 ; |BCD|FullAdder:inst3|CarryOut:inst2|inst2 ; out0             ;
-; |BCD|FullAdder:inst3|CarryOut:inst2|inst3 ; |BCD|FullAdder:inst3|CarryOut:inst2|inst3 ; out0             ;
-; |BCD|FullAdder:inst3|CarryOut:inst2|inst  ; |BCD|FullAdder:inst3|CarryOut:inst2|inst  ; out0             ;
-; |BCD|FullAdder:inst3|Sum:inst|inst1       ; |BCD|FullAdder:inst3|Sum:inst|inst1       ; out0             ;
-; |BCD|FullAdder:inst3|Sum:inst|inst        ; |BCD|FullAdder:inst3|Sum:inst|inst        ; out0             ;
-+-------------------------------------------+-------------------------------------------+------------------+
++--------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                  ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |BCDSegments|b      ; |BCDSegments|b      ; pin_out          ;
+; |BCDSegments|inst16 ; |BCDSegments|inst16 ; out0             ;
+; |BCDSegments|inst18 ; |BCDSegments|inst18 ; out0             ;
+; |BCDSegments|in[3]  ; |BCDSegments|in[3]  ; out              ;
+; |BCDSegments|in[2]  ; |BCDSegments|in[2]  ; out              ;
+; |BCDSegments|in[1]  ; |BCDSegments|in[1]  ; out              ;
+; |BCDSegments|in[0]  ; |BCDSegments|in[0]  ; out              ;
+; |BCDSegments|inst17 ; |BCDSegments|inst17 ; out0             ;
+; |BCDSegments|c      ; |BCDSegments|c      ; pin_out          ;
+; |BCDSegments|inst19 ; |BCDSegments|inst19 ; out0             ;
+; |BCDSegments|d      ; |BCDSegments|d      ; pin_out          ;
+; |BCDSegments|inst20 ; |BCDSegments|inst20 ; out0             ;
+; |BCDSegments|inst21 ; |BCDSegments|inst21 ; out0             ;
+; |BCDSegments|inst23 ; |BCDSegments|inst23 ; out0             ;
+; |BCDSegments|inst24 ; |BCDSegments|inst24 ; out0             ;
+; |BCDSegments|inst22 ; |BCDSegments|inst22 ; out0             ;
+; |BCDSegments|e      ; |BCDSegments|e      ; pin_out          ;
+; |BCDSegments|inst25 ; |BCDSegments|inst25 ; out0             ;
+; |BCDSegments|inst27 ; |BCDSegments|inst27 ; out0             ;
+; |BCDSegments|inst26 ; |BCDSegments|inst26 ; out0             ;
+; |BCDSegments|f      ; |BCDSegments|f      ; pin_out          ;
+; |BCDSegments|inst28 ; |BCDSegments|inst28 ; out0             ;
+; |BCDSegments|inst30 ; |BCDSegments|inst30 ; out0             ;
+; |BCDSegments|inst31 ; |BCDSegments|inst31 ; out0             ;
+; |BCDSegments|inst29 ; |BCDSegments|inst29 ; out0             ;
+; |BCDSegments|g      ; |BCDSegments|g      ; pin_out          ;
+; |BCDSegments|inst32 ; |BCDSegments|inst32 ; out0             ;
+; |BCDSegments|inst33 ; |BCDSegments|inst33 ; out0             ;
+; |BCDSegments|inst35 ; |BCDSegments|inst35 ; out0             ;
+; |BCDSegments|inst36 ; |BCDSegments|inst36 ; out0             ;
+; |BCDSegments|inst34 ; |BCDSegments|inst34 ; out0             ;
+; |BCDSegments|a      ; |BCDSegments|a      ; pin_out          ;
+; |BCDSegments|inst14 ; |BCDSegments|inst14 ; out0             ;
+; |BCDSegments|inst13 ; |BCDSegments|inst13 ; out0             ;
+; |BCDSegments|inst15 ; |BCDSegments|inst15 ; out0             ;
++---------------------+---------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -185,19 +175,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Simulator
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Thu Oct 25 07:54:41 2018
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Oct 25 17:53:53 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA_project -c ULA_project
-Info: Using vector source file "Somador/BCD.vwf"
+Info: Using vector source file "Somador/BCDSegmentsWF.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 22576
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 233 megabytes
-    Info: Processing ended: Thu Oct 25 07:54:42 2018
+Info: Number of transitions in simulation is 16862
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 206 megabytes
+    Info: Processing ended: Thu Oct 25 17:53:54 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
