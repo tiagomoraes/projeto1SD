@@ -1,5 +1,5 @@
-Quartus II
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 7
 3700
 OFF
@@ -20,6 +20,23 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+Complemento2
+# storage
+db|ULA_project.(0).cnf
+db|ULA_project.(0).cnf
+# case_insensitive
+# source_file
+complemento2|complemento2.bdf
+83cb5b27225d3a3b3a43d457a9286f8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
 Somador
 # storage
 db|ULA_project.(1).cnf
@@ -32,9 +49,6 @@ somador|somador.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Somador:inst
 }
 # macro_sequence
 
@@ -54,10 +68,12 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst|FullAdder:inst9
-Somador:inst|FullAdder:inst11
-Somador:inst|FullAdder:inst14
-Somador:inst|FullAdder:inst
+FullAdder:inst3
+FullAdder:inst2
+FullAdder:inst
+FullAdder:inst4
+FullAdder:inst6
+FullAdder:inst7
 }
 # macro_sequence
 
@@ -77,10 +93,12 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst|FullAdder:inst9|Sum:inst
-Somador:inst|FullAdder:inst11|Sum:inst
-Somador:inst|FullAdder:inst14|Sum:inst
-Somador:inst|FullAdder:inst|Sum:inst
+FullAdder:inst3|Sum:inst
+FullAdder:inst2|Sum:inst
+FullAdder:inst|Sum:inst
+FullAdder:inst4|Sum:inst
+FullAdder:inst6|Sum:inst
+FullAdder:inst7|Sum:inst
 }
 # macro_sequence
 
@@ -100,10 +118,12 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst|FullAdder:inst9|CarryOut:inst2
-Somador:inst|FullAdder:inst11|CarryOut:inst2
-Somador:inst|FullAdder:inst14|CarryOut:inst2
-Somador:inst|FullAdder:inst|CarryOut:inst2
+FullAdder:inst3|CarryOut:inst2
+FullAdder:inst2|CarryOut:inst2
+FullAdder:inst|CarryOut:inst2
+FullAdder:inst4|CarryOut:inst2
+FullAdder:inst6|CarryOut:inst2
+FullAdder:inst7|CarryOut:inst2
 }
 # macro_sequence
 
@@ -122,126 +142,18 @@ eea6bddb6807ccd47bdce415e22be7a
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Somador:inst|MUX2x1:inst3
-Somador:inst|MUX2x1:inst4
-Somador:inst|MUX2x1:inst5
-Somador:inst|MUX2x1:inst2
-}
 # macro_sequence
 
 # end
 # entity
-AndVector
+BCD
 # storage
 db|ULA_project.(6).cnf
 db|ULA_project.(6).cnf
 # case_insensitive
 # source_file
-and|andvector.bdf
-7acfe4526bc9922b7c90d7da2c9fd4
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-XorVector
-# storage
-db|ULA_project.(7).cnf
-db|ULA_project.(7).cnf
-# case_insensitive
-# source_file
-xor|xorvector.bdf
-f465688aadf9df25aa511fe5a9cad5
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-MaiorBit
-# storage
-db|ULA_project.(9).cnf
-db|ULA_project.(9).cnf
-# case_insensitive
-# source_file
-maior|maiorbit.bdf
-9699eb82246f56bdbaf21b80e405b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-Maior
-# storage
-db|ULA_project.(8).cnf
-db|ULA_project.(8).cnf
-# case_insensitive
-# source_file
-maior|maior.bdf
-4359ef953ffaa28e7e69ed289e1cacef
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-Menor
-# storage
-db|ULA_project.(0).cnf
-db|ULA_project.(0).cnf
-# case_insensitive
-# source_file
-menor|menor.bdf
-e6e84b11d71013eeb14dd3186fc94bf
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-MenorBit
-# storage
-db|ULA_project.(10).cnf
-db|ULA_project.(10).cnf
-# case_insensitive
-# source_file
-menor|menorbit.bdf
-de2b5ef311c0e8d73d1fc9d266d2e7
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-Complemento2
-# storage
-db|ULA_project.(11).cnf
-db|ULA_project.(11).cnf
-# case_insensitive
-# source_file
-complemento2|complemento2.bdf
-83cb5b27225d3a3b3a43d457a9286f8
+somador|bcd.bdf
+a1b13b83fe647571f525e49361f57cc6
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

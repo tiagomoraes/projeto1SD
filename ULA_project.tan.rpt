@@ -1,6 +1,6 @@
 Classic Timing Analyzer report for ULA_project
-Thu Oct 11 19:20:45 2018
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Thu Oct 25 07:48:29 2018
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time ; From ; To     ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 9.658 ns    ; B[0] ; OUT[2] ; --         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 11.181 ns   ; B[1] ; Sum[1] ; --         ; --       ; 0            ;
 ; Total number of failed paths ;       ;               ;             ;      ;        ;            ;          ; 0            ;
 +------------------------------+-------+---------------+-------------+------+--------+------------+----------+--------------+
 
@@ -76,57 +76,85 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 2      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+---------------------------------------------------------------+
-; tpd                                                           ;
-+-------+-------------------+-----------------+------+----------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From ; To       ;
-+-------+-------------------+-----------------+------+----------+
-; N/A   ; None              ; 9.658 ns        ; B[0] ; OUT[2]   ;
-; N/A   ; None              ; 9.531 ns        ; B[2] ; OUT[2]   ;
-; N/A   ; None              ; 9.482 ns        ; B[1] ; OUT[2]   ;
-; N/A   ; None              ; 9.287 ns        ; B[0] ; OUT[1]   ;
-; N/A   ; None              ; 9.110 ns        ; B[1] ; OUT[1]   ;
-; N/A   ; None              ; 8.250 ns        ; B[0] ; OUT[3]   ;
-; N/A   ; None              ; 8.122 ns        ; B[2] ; OUT[3]   ;
-; N/A   ; None              ; 8.096 ns        ; B[3] ; OUT[3]   ;
-; N/A   ; None              ; 8.075 ns        ; B[1] ; OUT[3]   ;
-; N/A   ; None              ; 8.068 ns        ; B[2] ; overflow ;
-; N/A   ; None              ; 8.035 ns        ; B[0] ; overflow ;
-; N/A   ; None              ; 7.882 ns        ; B[3] ; overflow ;
-; N/A   ; None              ; 7.859 ns        ; B[1] ; overflow ;
-; N/A   ; None              ; 7.036 ns        ; B[0] ; OUT[0]   ;
-+-------+-------------------+-----------------+------+----------+
++-------------------------------------------------------------+
+; tpd                                                         ;
++-------+-------------------+-----------------+------+--------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To     ;
++-------+-------------------+-----------------+------+--------+
+; N/A   ; None              ; 11.181 ns       ; B[1] ; Sum[1] ;
+; N/A   ; None              ; 10.966 ns       ; B[1] ; Sum[2] ;
+; N/A   ; None              ; 10.859 ns       ; A[1] ; Sum[1] ;
+; N/A   ; None              ; 10.684 ns       ; A[3] ; Sum[1] ;
+; N/A   ; None              ; 10.644 ns       ; A[1] ; Sum[2] ;
+; N/A   ; None              ; 10.593 ns       ; A[0] ; Sum[1] ;
+; N/A   ; None              ; 10.472 ns       ; A[3] ; Sum[2] ;
+; N/A   ; None              ; 10.378 ns       ; A[0] ; Sum[2] ;
+; N/A   ; None              ; 10.334 ns       ; B[0] ; Sum[1] ;
+; N/A   ; None              ; 10.119 ns       ; B[0] ; Sum[2] ;
+; N/A   ; None              ; 10.095 ns       ; B[2] ; Sum[1] ;
+; N/A   ; None              ; 10.034 ns       ; B[3] ; Sum[1] ;
+; N/A   ; None              ; 9.880 ns        ; B[2] ; Sum[2] ;
+; N/A   ; None              ; 9.819 ns        ; B[3] ; Sum[2] ;
+; N/A   ; None              ; 9.741 ns        ; B[1] ; Sum[3] ;
+; N/A   ; None              ; 9.714 ns        ; A[2] ; Sum[1] ;
+; N/A   ; None              ; 9.645 ns        ; A[0] ; Sum[0] ;
+; N/A   ; None              ; 9.557 ns        ; B[1] ; Cout   ;
+; N/A   ; None              ; 9.499 ns        ; A[2] ; Sum[2] ;
+; N/A   ; None              ; 9.488 ns        ; B[0] ; Sum[0] ;
+; N/A   ; None              ; 9.419 ns        ; A[1] ; Sum[3] ;
+; N/A   ; None              ; 9.247 ns        ; A[3] ; Sum[3] ;
+; N/A   ; None              ; 9.235 ns        ; A[1] ; Cout   ;
+; N/A   ; None              ; 9.154 ns        ; A[0] ; Sum[3] ;
+; N/A   ; None              ; 9.074 ns        ; A[3] ; Cout   ;
+; N/A   ; None              ; 8.969 ns        ; A[0] ; Cout   ;
+; N/A   ; None              ; 8.894 ns        ; B[0] ; Sum[3] ;
+; N/A   ; None              ; 8.710 ns        ; B[0] ; Cout   ;
+; N/A   ; None              ; 8.656 ns        ; B[2] ; Sum[3] ;
+; N/A   ; None              ; 8.595 ns        ; B[3] ; Sum[3] ;
+; N/A   ; None              ; 8.471 ns        ; B[2] ; Cout   ;
+; N/A   ; None              ; 8.421 ns        ; B[3] ; Cout   ;
+; N/A   ; None              ; 8.275 ns        ; A[2] ; Sum[3] ;
+; N/A   ; None              ; 8.096 ns        ; A[2] ; Cout   ;
++-------+-------------------+-----------------+------+--------+
 
 
 +--------------------------+
 ; Timing Analyzer Messages ;
 +--------------------------+
 Info: *******************************************************************
-Info: Running Quartus II Classic Timing Analyzer
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Oct 11 19:20:45 2018
+Info: Running Quartus II 64-Bit Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu Oct 25 07:48:29 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ULA_project -c ULA_project --timing_analysis_only
-Info: Longest tpd from source pin "B[0]" to destination pin "OUT[2]" is 9.658 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.799 ns) = 0.799 ns; Loc. = PIN_W10; Fanout = 5; PIN Node = 'B[0]'
-    Info: 2: + IC(3.780 ns) + CELL(0.346 ns) = 4.925 ns; Loc. = LCCOMB_X23_Y1_N20; Fanout = 1; COMB Node = 'Somador:inst|FullAdder:inst9|Sum:inst|inst1'
-    Info: 3: + IC(2.781 ns) + CELL(1.952 ns) = 9.658 ns; Loc. = PIN_E12; Fanout = 0; PIN Node = 'OUT[2]'
-    Info: Total cell delay = 3.097 ns ( 32.07 % )
-    Info: Total interconnect delay = 6.561 ns ( 67.93 % )
-Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 205 megabytes
-    Info: Processing ended: Thu Oct 11 19:20:45 2018
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Longest tpd from source pin "B[1]" to destination pin "Sum[1]" is 11.181 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.809 ns) = 0.809 ns; Loc. = PIN_B12; Fanout = 2; PIN Node = 'B[1]'
+    Info: 2: + IC(4.608 ns) + CELL(0.366 ns) = 5.783 ns; Loc. = LCCOMB_X22_Y1_N2; Fanout = 4; COMB Node = 'FullAdder:inst2|CarryOut:inst2|inst4~0'
+    Info: 3: + IC(0.271 ns) + CELL(0.272 ns) = 6.326 ns; Loc. = LCCOMB_X22_Y1_N16; Fanout = 1; COMB Node = 'FullAdder:inst7|Sum:inst|inst'
+    Info: 4: + IC(2.873 ns) + CELL(1.982 ns) = 11.181 ns; Loc. = PIN_C16; Fanout = 0; PIN Node = 'Sum[1]'
+    Info: Total cell delay = 3.429 ns ( 30.67 % )
+    Info: Total interconnect delay = 7.752 ns ( 69.33 % )
+Info: Quartus II 64-Bit Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 291 megabytes
+    Info: Processing ended: Thu Oct 25 07:48:30 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

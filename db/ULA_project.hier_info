@@ -1,41 +1,20 @@
-|Complemento2
-overflow <= Somador:inst.Overflow
-B[0] => Somador:inst.B[0]
-B[1] => Somador:inst.B[1]
-B[2] => Somador:inst.B[2]
-B[3] => Somador:inst.B[3]
-OUT[0] <= Somador:inst.S[0]
-OUT[1] <= Somador:inst.S[1]
-OUT[2] <= Somador:inst.S[2]
-OUT[3] <= Somador:inst.S[3]
+|BCD
+Cout <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => FullAdder:inst.A
+A[1] => FullAdder:inst2.A
+A[2] => FullAdder:inst3.A
+A[3] => FullAdder:inst4.A
+B[0] => FullAdder:inst.B
+B[1] => FullAdder:inst2.B
+B[2] => FullAdder:inst3.B
+B[3] => FullAdder:inst4.B
+Sum[0] <= FullAdder:inst.S
+Sum[1] <= FullAdder:inst7.S
+Sum[2] <= FullAdder:inst6.S
+Sum[3] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Complemento2|Somador:inst
-Overflow <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => FullAdder:inst14.A
-A[1] => FullAdder:inst11.A
-A[2] => FullAdder:inst9.A
-A[3] => FullAdder:inst.A
-B[0] => MUX2x1:inst5.A
-B[0] => inst16.IN0
-B[1] => MUX2x1:inst4.A
-B[1] => inst13.IN0
-B[2] => MUX2x1:inst3.A
-B[2] => inst10.IN0
-B[3] => MUX2x1:inst2.A
-B[3] => inst7.IN0
-Selector => MUX2x1:inst3.sel
-Selector => MUX2x1:inst4.sel
-Selector => MUX2x1:inst5.sel
-Selector => FullAdder:inst14.Cin
-Selector => MUX2x1:inst2.sel
-S[0] <= FullAdder:inst14.S
-S[1] <= FullAdder:inst11.S
-S[2] <= FullAdder:inst9.S
-S[3] <= FullAdder:inst.S
-
-
-|Complemento2|Somador:inst|FullAdder:inst9
+|BCD|FullAdder:inst3
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -46,14 +25,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|Complemento2|Somador:inst|FullAdder:inst9|Sum:inst
+|BCD|FullAdder:inst3|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|Complemento2|Somador:inst|FullAdder:inst9|CarryOut:inst2
+|BCD|FullAdder:inst3|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -63,15 +42,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|Complemento2|Somador:inst|MUX2x1:inst3
-out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-sel => inst.IN0
-sel => inst3.IN0
-A => inst2.IN1
-B => inst3.IN1
-
-
-|Complemento2|Somador:inst|FullAdder:inst11
+|BCD|FullAdder:inst2
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -82,14 +53,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|Complemento2|Somador:inst|FullAdder:inst11|Sum:inst
+|BCD|FullAdder:inst2|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|Complemento2|Somador:inst|FullAdder:inst11|CarryOut:inst2
+|BCD|FullAdder:inst2|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -99,15 +70,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|Complemento2|Somador:inst|MUX2x1:inst4
-out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-sel => inst.IN0
-sel => inst3.IN0
-A => inst2.IN1
-B => inst3.IN1
-
-
-|Complemento2|Somador:inst|FullAdder:inst14
+|BCD|FullAdder:inst
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -118,14 +81,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|Complemento2|Somador:inst|FullAdder:inst14|Sum:inst
+|BCD|FullAdder:inst|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|Complemento2|Somador:inst|FullAdder:inst14|CarryOut:inst2
+|BCD|FullAdder:inst|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -135,15 +98,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|Complemento2|Somador:inst|MUX2x1:inst5
-out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-sel => inst.IN0
-sel => inst3.IN0
-A => inst2.IN1
-B => inst3.IN1
-
-
-|Complemento2|Somador:inst|FullAdder:inst
+|BCD|FullAdder:inst4
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -154,14 +109,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|Complemento2|Somador:inst|FullAdder:inst|Sum:inst
+|BCD|FullAdder:inst4|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|Complemento2|Somador:inst|FullAdder:inst|CarryOut:inst2
+|BCD|FullAdder:inst4|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -171,11 +126,59 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|Complemento2|Somador:inst|MUX2x1:inst2
-out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-sel => inst.IN0
-sel => inst3.IN0
-A => inst2.IN1
-B => inst3.IN1
+|BCD|FullAdder:inst6
+S <= Sum:inst.S
+A => Sum:inst.A
+A => CarryOut:inst2.A
+B => Sum:inst.B
+B => CarryOut:inst2.B
+Cin => Sum:inst.Cin
+Cin => CarryOut:inst2.Cin
+Cout <= CarryOut:inst2.Cout
+
+
+|BCD|FullAdder:inst6|Sum:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst.IN1
+Cin => inst1.IN1
+
+
+|BCD|FullAdder:inst6|CarryOut:inst2
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN1
+Cin => inst2.IN1
+Cin => inst3.IN1
+A => inst3.IN0
+A => inst.IN0
+
+
+|BCD|FullAdder:inst7
+S <= Sum:inst.S
+A => Sum:inst.A
+A => CarryOut:inst2.A
+B => Sum:inst.B
+B => CarryOut:inst2.B
+Cin => Sum:inst.Cin
+Cin => CarryOut:inst2.Cin
+Cout <= CarryOut:inst2.Cout
+
+
+|BCD|FullAdder:inst7|Sum:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst.IN1
+Cin => inst1.IN1
+
+
+|BCD|FullAdder:inst7|CarryOut:inst2
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN1
+Cin => inst2.IN1
+Cin => inst3.IN1
+A => inst3.IN0
+A => inst.IN0
 
 
