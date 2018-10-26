@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA_project
-Thu Oct 25 19:20:33 2018
+Fri Oct 26 00:10:09 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Oct 25 19:20:33 2018        ;
+; Analysis & Synthesis Status   ; Successful - Fri Oct 26 00:10:09 2018        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ULA_project                                  ;
-; Top-level Entity Name         ; MUX8x1Vector                                 ;
+; Top-level Entity Name         ; Decodificador_Func                           ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 18                                           ;
+;     Combinational ALUTs       ; 7                                            ;
 ;     Dedicated logic registers ; 0                                            ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 39                                           ;
+; Total pins                    ; 18                                           ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
 ; DSP block 9-bit elements      ; 0                                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; MUX8x1Vector       ; ULA_project        ;
+; Top-level entity name                                                      ; Decodificador_Func ; ULA_project        ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -149,14 +149,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                      ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
-; MUX/MUX8x1.bdf                   ; yes             ; User Block Diagram/Schematic File  ; E:/UFPE/Sistemas Digitais - IF675/projeto1SD/MUX/MUX8x1.bdf       ;
-; MUX/MUX8x1Vector.bdf             ; yes             ; User Block Diagram/Schematic File  ; E:/UFPE/Sistemas Digitais - IF675/projeto1SD/MUX/MUX8x1Vector.bdf ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                           ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+
+; Decodifocador_Func/Decodificador_Func.bdf ; yes             ; User Block Diagram/Schematic File  ; E:/UFPE/Sistemas Digitais - IF675/projeto1SD/Decodifocador_Func/Decodificador_Func.bdf ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -164,52 +163,48 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------+-------+
 ; Resource                                      ; Usage ;
 +-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 18    ;
+; Estimated ALUTs Used                          ; 7     ;
 ; Dedicated logic registers                     ; 0     ;
 ;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 2     ;
+; Estimated ALUTs Unavailable                   ; 0     ;
 ;                                               ;       ;
-; Total combinational functions                 ; 18    ;
+; Total combinational functions                 ; 7     ;
 ; Combinational ALUT usage by number of inputs  ;       ;
 ;     -- 7 input functions                      ; 0     ;
-;     -- 6 input functions                      ; 2     ;
-;     -- 5 input functions                      ; 12    ;
-;     -- 4 input functions                      ; 4     ;
-;     -- <=3 input functions                    ; 0     ;
+;     -- 6 input functions                      ; 0     ;
+;     -- 5 input functions                      ; 0     ;
+;     -- 4 input functions                      ; 5     ;
+;     -- <=3 input functions                    ; 2     ;
 ;                                               ;       ;
 ; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 18    ;
+;     -- normal mode                            ; 7     ;
 ;     -- extended LUT mode                      ; 0     ;
 ;     -- arithmetic mode                        ; 0     ;
 ;     -- shared arithmetic mode                 ; 0     ;
 ;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 20    ;
+; Estimated ALUT/register pairs used            ; 7     ;
 ;                                               ;       ;
 ; Total registers                               ; 0     ;
 ;     -- Dedicated logic registers              ; 0     ;
 ;     -- I/O registers                          ; 0     ;
 ;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 10    ;
+; Estimated ALMs:  partially or completely used ; 4     ;
 ;                                               ;       ;
-; I/O pins                                      ; 39    ;
-; Maximum fan-out node                          ; S0    ;
-; Maximum fan-out                               ; 15    ;
-; Total fan-out                                 ; 92    ;
-; Average fan-out                               ; 1.61  ;
+; I/O pins                                      ; 18    ;
+; Maximum fan-out node                          ; A[0]  ;
+; Maximum fan-out                               ; 7     ;
+; Total fan-out                                 ; 34    ;
+; Average fan-out                               ; 1.36  ;
 +-----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                  ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------+--------------+
-; |MUX8x1Vector              ; 18 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 39   ; 0            ; |MUX8x1Vector              ; work         ;
-;    |MUX8x1:inst2|          ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX8x1Vector|MUX8x1:inst2 ; work         ;
-;    |MUX8x1:inst3|          ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX8x1Vector|MUX8x1:inst3 ; work         ;
-;    |MUX8x1:inst4|          ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX8x1Vector|MUX8x1:inst4 ;              ;
-;    |MUX8x1:inst|           ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX8x1Vector|MUX8x1:inst  ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |Decodificador_Func        ; 7 (7)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 18   ; 0            ; |Decodificador_Func ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,7 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Oct 25 19:20:31 2018
+    Info: Processing started: Fri Oct 26 00:10:06 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA_project -c ULA_project
 Info: Found 1 design units, including 1 entities, in source file somador/fulladder.bdf
     Info: Found entity 1: FullAdder
@@ -272,16 +267,24 @@ Info: Found 1 design units, including 1 entities, in source file mux/mux8x1.bdf
     Info: Found entity 1: MUX8x1
 Info: Found 1 design units, including 1 entities, in source file mux/mux8x1vector.bdf
     Info: Found entity 1: MUX8x1Vector
-Info: Elaborating entity "MUX8x1Vector" for the top level hierarchy
-Info: Elaborating entity "MUX8x1" for hierarchy "MUX8x1:inst4"
-Info: Implemented 57 device resources after synthesis - the final resource count might be different
-    Info: Implemented 35 input pins
-    Info: Implemented 4 output pins
-    Info: Implemented 18 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+Info: Found 1 design units, including 1 entities, in source file decodifocador_func/decodificador_func.bdf
+    Info: Found entity 1: Decodificador_Func
+Info: Elaborating entity "Decodificador_Func" for the top level hierarchy
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "SINAL[5]" is stuck at GND
+    Warning (13410): Pin "SINAL[4]" is stuck at GND
+    Warning (13410): Pin "SINAL[3]" is stuck at GND
+    Warning (13410): Pin "SINAL[2]" is stuck at GND
+    Warning (13410): Pin "SINAL[1]" is stuck at GND
+    Warning (13410): Pin "SINAL[0]" is stuck at GND
+Info: Implemented 25 device resources after synthesis - the final resource count might be different
+    Info: Implemented 4 input pins
+    Info: Implemented 14 output pins
+    Info: Implemented 7 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 239 megabytes
-    Info: Processing ended: Thu Oct 25 19:20:33 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Fri Oct 26 00:10:09 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

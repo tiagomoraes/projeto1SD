@@ -50,9 +50,6 @@ mux|mux8x1vector.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -70,11 +67,25 @@ d7f55a7afee0ef9a30d935f42045ef
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+Decodificador_Func
+# storage
+db|ULA_project.(3).cnf
+db|ULA_project.(3).cnf
+# case_insensitive
+# source_file
+decodifocador_func|decodificador_func.bdf
+c7ddccb9253c97d02b755736b5a25e6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-MUX8x1:inst4
-MUX8x1:inst3
-MUX8x1:inst2
-MUX8x1:inst
+|
 }
 # macro_sequence
 

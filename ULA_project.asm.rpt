@@ -1,5 +1,5 @@
 Assembler report for ULA_project
-Thu Oct 25 19:20:40 2018
+Fri Oct 26 00:10:17 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 25 19:20:40 2018 ;
+; Assembler Status      ; Successful - Fri Oct 26 00:10:17 2018 ;
 ; Revision Name         ; ULA_project                           ;
-; Top-level Entity Name ; MUX8x1Vector                          ;
+; Top-level Entity Name ; Decodificador_Func                    ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -96,7 +96,7 @@ applicable agreement for further details.
 +----------------+-----------------------------------------------------------------------+
 ; Device         ; EP2S15F484C3                                                          ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                            ;
-; Checksum       ; 0x0027B467                                                            ;
+; Checksum       ; 0x002776BA                                                            ;
 +----------------+-----------------------------------------------------------------------+
 
 
@@ -107,7 +107,7 @@ applicable agreement for further details.
 +--------------------+-------------------------------------------------------------------+
 ; Device             ; EPC16                                                             ;
 ; JTAG usercode      ; 0xFFFFFFFF                                                        ;
-; Checksum           ; 0x1EF3E1CC                                                        ;
+; Checksum           ; 0x1EF5EDFF                                                        ;
 ; Compression Ratio  ; 3                                                                 ;
 +--------------------+-------------------------------------------------------------------+
 
@@ -118,14 +118,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Oct 25 19:20:39 2018
+    Info: Processing started: Fri Oct 26 00:10:15 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ULA_project -c ULA_project
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 261 megabytes
-    Info: Processing ended: Thu Oct 25 19:20:40 2018
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri Oct 26 00:10:17 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
