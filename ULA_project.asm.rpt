@@ -1,5 +1,5 @@
 Assembler report for ULA_project
-Thu Oct 25 17:51:19 2018
+Thu Oct 25 19:20:40 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/mbmt/Documents/projeto1SD/ULA_project.sof
-  6. Assembler Device Options: C:/Users/mbmt/Documents/projeto1SD/ULA_project.pof
+  5. Assembler Device Options: E:/UFPE/Sistemas Digitais - IF675/projeto1SD/ULA_project.sof
+  6. Assembler Device Options: E:/UFPE/Sistemas Digitais - IF675/projeto1SD/ULA_project.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 25 17:51:19 2018 ;
+; Assembler Status      ; Successful - Thu Oct 25 19:20:40 2018 ;
 ; Revision Name         ; ULA_project                           ;
-; Top-level Entity Name ; BCDSegments                           ;
+; Top-level Entity Name ; MUX8x1Vector                          ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -79,37 +79,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------------------------+
-; Assembler Generated Files                          ;
-+----------------------------------------------------+
-; File Name                                          ;
-+----------------------------------------------------+
-; C:/Users/mbmt/Documents/projeto1SD/ULA_project.sof ;
-; C:/Users/mbmt/Documents/projeto1SD/ULA_project.pof ;
-+----------------------------------------------------+
++--------------------------------------------------------------+
+; Assembler Generated Files                                    ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; E:/UFPE/Sistemas Digitais - IF675/projeto1SD/ULA_project.sof ;
+; E:/UFPE/Sistemas Digitais - IF675/projeto1SD/ULA_project.pof ;
++--------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/mbmt/Documents/projeto1SD/ULA_project.sof ;
-+----------------+-------------------------------------------------------------+
-; Option         ; Setting                                                     ;
-+----------------+-------------------------------------------------------------+
-; Device         ; EP2S15F484C3                                                ;
-; JTAG usercode  ; 0xFFFFFFFF                                                  ;
-; Checksum       ; 0x002776C0                                                  ;
-+----------------+-------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/UFPE/Sistemas Digitais - IF675/projeto1SD/ULA_project.sof ;
++----------------+-----------------------------------------------------------------------+
+; Option         ; Setting                                                               ;
++----------------+-----------------------------------------------------------------------+
+; Device         ; EP2S15F484C3                                                          ;
+; JTAG usercode  ; 0xFFFFFFFF                                                            ;
+; Checksum       ; 0x0027B467                                                            ;
++----------------+-----------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/mbmt/Documents/projeto1SD/ULA_project.pof ;
-+--------------------+---------------------------------------------------------+
-; Option             ; Setting                                                 ;
-+--------------------+---------------------------------------------------------+
-; Device             ; EPC16                                                   ;
-; JTAG usercode      ; 0xFFFFFFFF                                              ;
-; Checksum           ; 0x1EF5DAFF                                              ;
-; Compression Ratio  ; 3                                                       ;
-+--------------------+---------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/UFPE/Sistemas Digitais - IF675/projeto1SD/ULA_project.pof ;
++--------------------+-------------------------------------------------------------------+
+; Option             ; Setting                                                           ;
++--------------------+-------------------------------------------------------------------+
+; Device             ; EPC16                                                             ;
+; JTAG usercode      ; 0xFFFFFFFF                                                        ;
+; Checksum           ; 0x1EF3E1CC                                                        ;
+; Compression Ratio  ; 3                                                                 ;
++--------------------+-------------------------------------------------------------------+
 
 
 +--------------------+
@@ -118,14 +118,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Oct 25 17:51:17 2018
+    Info: Processing started: Thu Oct 25 19:20:39 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ULA_project -c ULA_project
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 293 megabytes
-    Info: Processing ended: Thu Oct 25 17:51:19 2018
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 261 megabytes
+    Info: Processing ended: Thu Oct 25 19:20:40 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 

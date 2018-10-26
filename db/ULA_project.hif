@@ -33,8 +33,48 @@ a957e97fcc56f0aae486c5b1e3664a8e
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+MUX8x1Vector
+# storage
+db|ULA_project.(1).cnf
+db|ULA_project.(1).cnf
+# case_insensitive
+# source_file
+mux|mux8x1vector.bdf
+872a48c9d749f096e6825651f9aea0e3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+MUX8x1
+# storage
+db|ULA_project.(2).cnf
+db|ULA_project.(2).cnf
+# case_insensitive
+# source_file
+mux|mux8x1.bdf
+d7f55a7afee0ef9a30d935f42045ef
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUX8x1:inst4
+MUX8x1:inst3
+MUX8x1:inst2
+MUX8x1:inst
 }
 # macro_sequence
 
