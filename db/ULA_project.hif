@@ -1,5 +1,5 @@
-Quartus II 64-Bit
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 7
 3700
 OFF
@@ -20,14 +20,14 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-BCDComplete
+BCDSegments
 # storage
 db|ULA_project.(0).cnf
 db|ULA_project.(0).cnf
 # case_insensitive
 # source_file
-somador|bcdcomplete.bdf
-fa4f53bc1ba71b2812f3cb4c5697316
+somador|bcdsegments.bdf
+9f49df579eb97a741133f299d85d87c5
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -35,122 +35,6 @@ AUTO
 }
 # hierarchies {
 |
-}
-# macro_sequence
-
-# end
-# entity
-BCDSegments
-# storage
-db|ULA_project.(1).cnf
-db|ULA_project.(1).cnf
-# case_insensitive
-# source_file
-somador|bcdsegments.bdf
-a957e97fcc56f0aae486c5b1e3664a8e
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCDSegments:inst1
-BCDSegments:inst2
-}
-# macro_sequence
-
-# end
-# entity
-BCD
-# storage
-db|ULA_project.(2).cnf
-db|ULA_project.(2).cnf
-# case_insensitive
-# source_file
-somador|bcd.bdf
-a1b13b83fe647571f525e49361f57cc6
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCD:inst
-}
-# macro_sequence
-
-# end
-# entity
-FullAdder
-# storage
-db|ULA_project.(3).cnf
-db|ULA_project.(3).cnf
-# case_insensitive
-# source_file
-somador|fulladder.bdf
-51ebdff729e8e9ea4b034f4c6f06ddf
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCD:inst|FullAdder:inst3
-BCD:inst|FullAdder:inst2
-BCD:inst|FullAdder:inst
-BCD:inst|FullAdder:inst4
-BCD:inst|FullAdder:inst6
-BCD:inst|FullAdder:inst7
-}
-# macro_sequence
-
-# end
-# entity
-Sum
-# storage
-db|ULA_project.(4).cnf
-db|ULA_project.(4).cnf
-# case_insensitive
-# source_file
-somador|sum.bdf
-7125d52e5c9e92c20159b5c72f6f1
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCD:inst|FullAdder:inst3|Sum:inst
-BCD:inst|FullAdder:inst2|Sum:inst
-BCD:inst|FullAdder:inst|Sum:inst
-BCD:inst|FullAdder:inst4|Sum:inst
-BCD:inst|FullAdder:inst6|Sum:inst
-BCD:inst|FullAdder:inst7|Sum:inst
-}
-# macro_sequence
-
-# end
-# entity
-CarryOut
-# storage
-db|ULA_project.(5).cnf
-db|ULA_project.(5).cnf
-# case_insensitive
-# source_file
-somador|carryout.bdf
-85e3863947743223b9195c60d1539b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCD:inst|FullAdder:inst3|CarryOut:inst2
-BCD:inst|FullAdder:inst2|CarryOut:inst2
-BCD:inst|FullAdder:inst|CarryOut:inst2
-BCD:inst|FullAdder:inst4|CarryOut:inst2
-BCD:inst|FullAdder:inst6|CarryOut:inst2
-BCD:inst|FullAdder:inst7|CarryOut:inst2
 }
 # macro_sequence
 
