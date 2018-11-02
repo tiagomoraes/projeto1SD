@@ -68,29 +68,12 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-MUX8x1Correct:inst11|MUX8x1:inst1
-MUX8x1Correct:inst11|MUX8x1:inst5
-MUX8x1Correct:inst11|MUX8x1:inst
-MUX8x1Correct:inst11|MUX8x1:inst2
-MUX8x1Correct:inst11|MUX8x1:inst3
-MUX8x1Correct:inst11|MUX8x1:inst4
-}
-# macro_sequence
-
-# end
-# entity
-Decodificador_Func
-# storage
-db|ULA_project.(3).cnf
-db|ULA_project.(3).cnf
-# case_insensitive
-# source_file
-decodifocador_func|decodificador_func.bdf
-c7ddccb9253c97d02b755736b5a25e6
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst1
+ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst5
+ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst
+ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst2
+ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst3
+ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst4
 }
 # macro_sequence
 
@@ -110,7 +93,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-MUX8x1Correct:inst11
+ULA:inst|MUX8x1Correct:inst11
 }
 # macro_sequence
 
@@ -130,7 +113,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Igual:inst3
+ULA:inst|Igual:inst3
 }
 # macro_sequence
 
@@ -150,10 +133,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Igual:inst3|IgualBit:inst
-Igual:inst3|IgualBit:inst1
-Igual:inst3|IgualBit:inst2
-Igual:inst3|IgualBit:inst3
+ULA:inst|Igual:inst3|IgualBit:inst
+ULA:inst|Igual:inst3|IgualBit:inst1
+ULA:inst|Igual:inst3|IgualBit:inst2
+ULA:inst|Igual:inst3|IgualBit:inst3
 }
 # macro_sequence
 
@@ -173,7 +156,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Maior:inst4
+ULA:inst|Maior:inst4
 }
 # macro_sequence
 
@@ -193,10 +176,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Maior:inst4|MaiorBit:inst
-Maior:inst4|MaiorBit:inst4
-Maior:inst4|MaiorBit:inst5
-Maior:inst4|MaiorBit:inst6
+ULA:inst|Maior:inst4|MaiorBit:inst
+ULA:inst|Maior:inst4|MaiorBit:inst4
+ULA:inst|Maior:inst4|MaiorBit:inst5
+ULA:inst|Maior:inst4|MaiorBit:inst6
 }
 # macro_sequence
 
@@ -216,7 +199,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Menor:inst5
+ULA:inst|Menor:inst5
 }
 # macro_sequence
 
@@ -236,10 +219,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Menor:inst5|MenorBit:inst11
-Menor:inst5|MenorBit:inst12
-Menor:inst5|MenorBit:inst9
-Menor:inst5|MenorBit:inst
+ULA:inst|Menor:inst5|MenorBit:inst11
+ULA:inst|Menor:inst5|MenorBit:inst12
+ULA:inst|Menor:inst5|MenorBit:inst9
+ULA:inst|Menor:inst5|MenorBit:inst
 }
 # macro_sequence
 
@@ -259,8 +242,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst
-Complemento2:inst2|Somador:inst
+ULA:inst|Somador:inst
+ULA:inst|Complemento2:inst2|Somador:inst
 }
 # macro_sequence
 
@@ -280,14 +263,14 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst|FullAdder:inst9
-Somador:inst|FullAdder:inst11
-Somador:inst|FullAdder:inst14
-Somador:inst|FullAdder:inst
-Complemento2:inst2|Somador:inst|FullAdder:inst9
-Complemento2:inst2|Somador:inst|FullAdder:inst11
-Complemento2:inst2|Somador:inst|FullAdder:inst14
-Complemento2:inst2|Somador:inst|FullAdder:inst
+ULA:inst|Somador:inst|FullAdder:inst9
+ULA:inst|Somador:inst|FullAdder:inst11
+ULA:inst|Somador:inst|FullAdder:inst14
+ULA:inst|Somador:inst|FullAdder:inst
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst9
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst11
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst14
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst
 }
 # macro_sequence
 
@@ -307,14 +290,14 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst|FullAdder:inst9|Sum:inst
-Somador:inst|FullAdder:inst11|Sum:inst
-Somador:inst|FullAdder:inst14|Sum:inst
-Somador:inst|FullAdder:inst|Sum:inst
-Complemento2:inst2|Somador:inst|FullAdder:inst9|Sum:inst
-Complemento2:inst2|Somador:inst|FullAdder:inst11|Sum:inst
-Complemento2:inst2|Somador:inst|FullAdder:inst14|Sum:inst
-Complemento2:inst2|Somador:inst|FullAdder:inst|Sum:inst
+ULA:inst|Somador:inst|FullAdder:inst9|Sum:inst
+ULA:inst|Somador:inst|FullAdder:inst11|Sum:inst
+ULA:inst|Somador:inst|FullAdder:inst14|Sum:inst
+ULA:inst|Somador:inst|FullAdder:inst|Sum:inst
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst9|Sum:inst
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst11|Sum:inst
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst14|Sum:inst
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst|Sum:inst
 }
 # macro_sequence
 
@@ -334,14 +317,14 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst|FullAdder:inst9|CarryOut:inst2
-Somador:inst|FullAdder:inst11|CarryOut:inst2
-Somador:inst|FullAdder:inst14|CarryOut:inst2
-Somador:inst|FullAdder:inst|CarryOut:inst2
-Complemento2:inst2|Somador:inst|FullAdder:inst9|CarryOut:inst2
-Complemento2:inst2|Somador:inst|FullAdder:inst11|CarryOut:inst2
-Complemento2:inst2|Somador:inst|FullAdder:inst14|CarryOut:inst2
-Complemento2:inst2|Somador:inst|FullAdder:inst|CarryOut:inst2
+ULA:inst|Somador:inst|FullAdder:inst9|CarryOut:inst2
+ULA:inst|Somador:inst|FullAdder:inst11|CarryOut:inst2
+ULA:inst|Somador:inst|FullAdder:inst14|CarryOut:inst2
+ULA:inst|Somador:inst|FullAdder:inst|CarryOut:inst2
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst9|CarryOut:inst2
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst11|CarryOut:inst2
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst14|CarryOut:inst2
+ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst|CarryOut:inst2
 }
 # macro_sequence
 
@@ -361,14 +344,14 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst|MUX2x1:inst3
-Somador:inst|MUX2x1:inst4
-Somador:inst|MUX2x1:inst5
-Somador:inst|MUX2x1:inst2
-Complemento2:inst2|Somador:inst|MUX2x1:inst3
-Complemento2:inst2|Somador:inst|MUX2x1:inst4
-Complemento2:inst2|Somador:inst|MUX2x1:inst5
-Complemento2:inst2|Somador:inst|MUX2x1:inst2
+ULA:inst|Somador:inst|MUX2x1:inst3
+ULA:inst|Somador:inst|MUX2x1:inst4
+ULA:inst|Somador:inst|MUX2x1:inst5
+ULA:inst|Somador:inst|MUX2x1:inst2
+ULA:inst|Complemento2:inst2|Somador:inst|MUX2x1:inst3
+ULA:inst|Complemento2:inst2|Somador:inst|MUX2x1:inst4
+ULA:inst|Complemento2:inst2|Somador:inst|MUX2x1:inst5
+ULA:inst|Complemento2:inst2|Somador:inst|MUX2x1:inst2
 }
 # macro_sequence
 
@@ -388,7 +371,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Complemento2:inst2
+ULA:inst|Complemento2:inst2
 }
 # macro_sequence
 
@@ -408,7 +391,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-XorVector:inst7
+ULA:inst|XorVector:inst7
 }
 # macro_sequence
 
@@ -428,19 +411,19 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-AndVector:inst6
+ULA:inst|AndVector:inst6
 }
 # macro_sequence
 
 # end
 # entity
-ULA_project
+ULA
 # storage
-db|ULA_project.(4).cnf
-db|ULA_project.(4).cnf
+db|ULA_project.(20).cnf
+db|ULA_project.(20).cnf
 # case_insensitive
 # source_file
-ula_project.bdf
+ula.bdf
 60607410b7d0c7f81098f33b2994de7a
 26
 # internal_option {
@@ -448,7 +431,47 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+ULA:inst
+}
+# macro_sequence
+
+# end
+# entity
+ULA_Final
+# storage
+db|ULA_project.(4).cnf
+db|ULA_project.(4).cnf
+# case_insensitive
+# source_file
+ula_final.bdf
+b8a26a241ec782087fb8f823459768d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+Decodificador_Func
+# storage
+db|ULA_project.(3).cnf
+db|ULA_project.(3).cnf
+# case_insensitive
+# source_file
+decodifocador_func|decodificador_func.bdf
+877d7ff25210acc546762e177ef6664
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador_Func:inst1
 }
 # macro_sequence
 

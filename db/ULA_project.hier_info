@@ -1,4 +1,34 @@
-|ULA_project
+|ULA_Final
+OVERFLOW <= ULA:inst.OVERFLOW
+A[0] => ULA:inst.A[0]
+A[1] => ULA:inst.A[1]
+A[2] => ULA:inst.A[2]
+A[3] => ULA:inst.A[3]
+B[0] => ULA:inst.B[0]
+B[1] => ULA:inst.B[1]
+B[2] => ULA:inst.B[2]
+B[3] => ULA:inst.B[3]
+SEL[0] => ULA:inst.SEL[0]
+SEL[1] => ULA:inst.SEL[1]
+SEL[2] => ULA:inst.SEL[2]
+STATUS <= ULA:inst.STATUS
+OUT[0] <= Decodificador_Func:inst1.OUT[0]
+OUT[1] <= Decodificador_Func:inst1.OUT[1]
+OUT[2] <= Decodificador_Func:inst1.OUT[2]
+OUT[3] <= Decodificador_Func:inst1.OUT[3]
+OUT[4] <= Decodificador_Func:inst1.OUT[4]
+OUT[5] <= Decodificador_Func:inst1.OUT[5]
+OUT[6] <= Decodificador_Func:inst1.OUT[6]
+SINAL[0] <= Decodificador_Func:inst1.SINAL[0]
+SINAL[1] <= Decodificador_Func:inst1.SINAL[1]
+SINAL[2] <= Decodificador_Func:inst1.SINAL[2]
+SINAL[3] <= Decodificador_Func:inst1.SINAL[3]
+SINAL[4] <= Decodificador_Func:inst1.SINAL[4]
+SINAL[5] <= Decodificador_Func:inst1.SINAL[5]
+SINAL[6] <= Decodificador_Func:inst1.SINAL[6]
+
+
+|ULA_Final|ULA:inst
 OVERFLOW <= MUX8x1Correct:inst11.OVERFLOW
 A[0] => Igual:inst3.A[0]
 A[0] => Maior:inst4.A[0]
@@ -63,7 +93,7 @@ VECTOR[2] <= MUX8x1Correct:inst11.VECTOR[2]
 VECTOR[3] <= MUX8x1Correct:inst11.VECTOR[3]
 
 
-|ULA_project|MUX8x1Correct:inst11
+|ULA_Final|ULA:inst|MUX8x1Correct:inst11
 OVERFLOW <= MUX8x1:inst1.out
 OF0 => MUX8x1:inst1.E0
 OF0 => MUX8x1:inst1.E1
@@ -116,7 +146,7 @@ IN7[2] => MUX8x1:inst3.E7
 IN7[3] => MUX8x1:inst4.E7
 
 
-|ULA_project|MUX8x1Correct:inst11|MUX8x1:inst1
+|ULA_Final|ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst1
 out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 E0 => inst19.IN0
 S0 => inst.IN0
@@ -143,7 +173,7 @@ E6 => inst17.IN0
 E7 => inst18.IN0
 
 
-|ULA_project|MUX8x1Correct:inst11|MUX8x1:inst5
+|ULA_Final|ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst5
 out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 E0 => inst19.IN0
 S0 => inst.IN0
@@ -170,7 +200,7 @@ E6 => inst17.IN0
 E7 => inst18.IN0
 
 
-|ULA_project|MUX8x1Correct:inst11|MUX8x1:inst
+|ULA_Final|ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst
 out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 E0 => inst19.IN0
 S0 => inst.IN0
@@ -197,7 +227,7 @@ E6 => inst17.IN0
 E7 => inst18.IN0
 
 
-|ULA_project|MUX8x1Correct:inst11|MUX8x1:inst2
+|ULA_Final|ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst2
 out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 E0 => inst19.IN0
 S0 => inst.IN0
@@ -224,7 +254,7 @@ E6 => inst17.IN0
 E7 => inst18.IN0
 
 
-|ULA_project|MUX8x1Correct:inst11|MUX8x1:inst3
+|ULA_Final|ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst3
 out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 E0 => inst19.IN0
 S0 => inst.IN0
@@ -251,7 +281,7 @@ E6 => inst17.IN0
 E7 => inst18.IN0
 
 
-|ULA_project|MUX8x1Correct:inst11|MUX8x1:inst4
+|ULA_Final|ULA:inst|MUX8x1Correct:inst11|MUX8x1:inst4
 out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 E0 => inst19.IN0
 S0 => inst.IN0
@@ -278,7 +308,7 @@ E6 => inst17.IN0
 E7 => inst18.IN0
 
 
-|ULA_project|Igual:inst3
+|ULA_Final|ULA:inst|Igual:inst3
 out <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A[0] => IgualBit:inst.A
 A[1] => IgualBit:inst1.A
@@ -290,7 +320,7 @@ B[2] => IgualBit:inst2.B
 B[3] => IgualBit:inst3.B
 
 
-|ULA_project|Igual:inst3|IgualBit:inst
+|ULA_Final|ULA:inst|Igual:inst3|IgualBit:inst
 out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst1.IN0
 A => inst7.IN0
@@ -298,7 +328,7 @@ B => inst1.IN1
 B => inst8.IN0
 
 
-|ULA_project|Igual:inst3|IgualBit:inst1
+|ULA_Final|ULA:inst|Igual:inst3|IgualBit:inst1
 out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst1.IN0
 A => inst7.IN0
@@ -306,7 +336,7 @@ B => inst1.IN1
 B => inst8.IN0
 
 
-|ULA_project|Igual:inst3|IgualBit:inst2
+|ULA_Final|ULA:inst|Igual:inst3|IgualBit:inst2
 out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst1.IN0
 A => inst7.IN0
@@ -314,7 +344,7 @@ B => inst1.IN1
 B => inst8.IN0
 
 
-|ULA_project|Igual:inst3|IgualBit:inst3
+|ULA_Final|ULA:inst|Igual:inst3|IgualBit:inst3
 out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst1.IN0
 A => inst7.IN0
@@ -322,7 +352,7 @@ B => inst1.IN1
 B => inst8.IN0
 
 
-|ULA_project|Maior:inst4
+|ULA_Final|ULA:inst|Maior:inst4
 out <= MaiorBit:inst.out
 A[0] => MaiorBit:inst6.A
 A[1] => MaiorBit:inst5.A
@@ -334,7 +364,7 @@ B[2] => MaiorBit:inst4.B
 B[3] => inst3.IN0
 
 
-|ULA_project|Maior:inst4|MaiorBit:inst
+|ULA_Final|ULA:inst|Maior:inst4|MaiorBit:inst
 out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 B => inst.IN0
 B => inst4.IN0
@@ -343,7 +373,7 @@ A => inst7.IN1
 Cin => inst6.IN1
 
 
-|ULA_project|Maior:inst4|MaiorBit:inst4
+|ULA_Final|ULA:inst|Maior:inst4|MaiorBit:inst4
 out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 B => inst.IN0
 B => inst4.IN0
@@ -352,7 +382,7 @@ A => inst7.IN1
 Cin => inst6.IN1
 
 
-|ULA_project|Maior:inst4|MaiorBit:inst5
+|ULA_Final|ULA:inst|Maior:inst4|MaiorBit:inst5
 out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 B => inst.IN0
 B => inst4.IN0
@@ -361,7 +391,7 @@ A => inst7.IN1
 Cin => inst6.IN1
 
 
-|ULA_project|Maior:inst4|MaiorBit:inst6
+|ULA_Final|ULA:inst|Maior:inst4|MaiorBit:inst6
 out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 B => inst.IN0
 B => inst4.IN0
@@ -370,7 +400,7 @@ A => inst7.IN1
 Cin => inst6.IN1
 
 
-|ULA_project|Menor:inst5
+|ULA_Final|ULA:inst|Menor:inst5
 out <= MenorBit:inst11.out
 B[0] => MenorBit:inst.B
 B[1] => MenorBit:inst9.B
@@ -382,7 +412,7 @@ A[2] => MenorBit:inst12.A
 A[3] => inst2.IN0
 
 
-|ULA_project|Menor:inst5|MenorBit:inst11
+|ULA_Final|ULA:inst|Menor:inst5|MenorBit:inst11
 out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -391,7 +421,7 @@ B => inst7.IN1
 Cin => inst6.IN1
 
 
-|ULA_project|Menor:inst5|MenorBit:inst12
+|ULA_Final|ULA:inst|Menor:inst5|MenorBit:inst12
 out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -400,7 +430,7 @@ B => inst7.IN1
 Cin => inst6.IN1
 
 
-|ULA_project|Menor:inst5|MenorBit:inst9
+|ULA_Final|ULA:inst|Menor:inst5|MenorBit:inst9
 out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -409,7 +439,7 @@ B => inst7.IN1
 Cin => inst6.IN1
 
 
-|ULA_project|Menor:inst5|MenorBit:inst
+|ULA_Final|ULA:inst|Menor:inst5|MenorBit:inst
 out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -418,7 +448,7 @@ B => inst7.IN1
 Cin => inst6.IN1
 
 
-|ULA_project|Somador:inst
+|ULA_Final|ULA:inst|Somador:inst
 Overflow <= inst17.DB_MAX_OUTPUT_PORT_TYPE
 A[0] => FullAdder:inst14.A
 A[1] => FullAdder:inst11.A
@@ -443,7 +473,7 @@ S[2] <= FullAdder:inst9.S
 S[3] <= FullAdder:inst.S
 
 
-|ULA_project|Somador:inst|FullAdder:inst9
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst9
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -454,14 +484,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|ULA_project|Somador:inst|FullAdder:inst9|Sum:inst
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst9|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|ULA_project|Somador:inst|FullAdder:inst9|CarryOut:inst2
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst9|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -471,7 +501,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|ULA_project|Somador:inst|MUX2x1:inst3
+|ULA_Final|ULA:inst|Somador:inst|MUX2x1:inst3
 out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 sel => inst.IN0
 sel => inst3.IN0
@@ -479,7 +509,7 @@ A => inst2.IN1
 B => inst3.IN1
 
 
-|ULA_project|Somador:inst|FullAdder:inst11
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst11
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -490,14 +520,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|ULA_project|Somador:inst|FullAdder:inst11|Sum:inst
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst11|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|ULA_project|Somador:inst|FullAdder:inst11|CarryOut:inst2
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst11|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -507,7 +537,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|ULA_project|Somador:inst|MUX2x1:inst4
+|ULA_Final|ULA:inst|Somador:inst|MUX2x1:inst4
 out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 sel => inst.IN0
 sel => inst3.IN0
@@ -515,7 +545,7 @@ A => inst2.IN1
 B => inst3.IN1
 
 
-|ULA_project|Somador:inst|FullAdder:inst14
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst14
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -526,14 +556,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|ULA_project|Somador:inst|FullAdder:inst14|Sum:inst
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst14|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|ULA_project|Somador:inst|FullAdder:inst14|CarryOut:inst2
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst14|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -543,7 +573,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|ULA_project|Somador:inst|MUX2x1:inst5
+|ULA_Final|ULA:inst|Somador:inst|MUX2x1:inst5
 out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 sel => inst.IN0
 sel => inst3.IN0
@@ -551,7 +581,7 @@ A => inst2.IN1
 B => inst3.IN1
 
 
-|ULA_project|Somador:inst|FullAdder:inst
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -562,14 +592,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|ULA_project|Somador:inst|FullAdder:inst|Sum:inst
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|ULA_project|Somador:inst|FullAdder:inst|CarryOut:inst2
+|ULA_Final|ULA:inst|Somador:inst|FullAdder:inst|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -579,7 +609,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|ULA_project|Somador:inst|MUX2x1:inst2
+|ULA_Final|ULA:inst|Somador:inst|MUX2x1:inst2
 out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 sel => inst.IN0
 sel => inst3.IN0
@@ -587,7 +617,7 @@ A => inst2.IN1
 B => inst3.IN1
 
 
-|ULA_project|Complemento2:inst2
+|ULA_Final|ULA:inst|Complemento2:inst2
 overflow <= Somador:inst.Overflow
 B[0] => Somador:inst.B[0]
 B[1] => Somador:inst.B[1]
@@ -599,7 +629,7 @@ OUT[2] <= Somador:inst.S[2]
 OUT[3] <= Somador:inst.S[3]
 
 
-|ULA_project|Complemento2:inst2|Somador:inst
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst
 Overflow <= inst17.DB_MAX_OUTPUT_PORT_TYPE
 A[0] => FullAdder:inst14.A
 A[1] => FullAdder:inst11.A
@@ -624,7 +654,7 @@ S[2] <= FullAdder:inst9.S
 S[3] <= FullAdder:inst.S
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst9
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst9
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -635,14 +665,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst9|Sum:inst
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst9|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst9|CarryOut:inst2
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst9|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -652,7 +682,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|MUX2x1:inst3
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|MUX2x1:inst3
 out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 sel => inst.IN0
 sel => inst3.IN0
@@ -660,7 +690,7 @@ A => inst2.IN1
 B => inst3.IN1
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst11
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst11
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -671,14 +701,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst11|Sum:inst
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst11|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst11|CarryOut:inst2
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst11|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -688,7 +718,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|MUX2x1:inst4
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|MUX2x1:inst4
 out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 sel => inst.IN0
 sel => inst3.IN0
@@ -696,7 +726,7 @@ A => inst2.IN1
 B => inst3.IN1
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst14
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst14
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -707,14 +737,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst14|Sum:inst
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst14|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst14|CarryOut:inst2
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst14|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -724,7 +754,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|MUX2x1:inst5
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|MUX2x1:inst5
 out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 sel => inst.IN0
 sel => inst3.IN0
@@ -732,7 +762,7 @@ A => inst2.IN1
 B => inst3.IN1
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst
 S <= Sum:inst.S
 A => Sum:inst.A
 A => CarryOut:inst2.A
@@ -743,14 +773,14 @@ Cin => CarryOut:inst2.Cin
 Cout <= CarryOut:inst2.Cout
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst|Sum:inst
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst|Sum:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 B => inst.IN1
 Cin => inst1.IN1
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|FullAdder:inst|CarryOut:inst2
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|FullAdder:inst|CarryOut:inst2
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN1
@@ -760,7 +790,7 @@ A => inst3.IN0
 A => inst.IN0
 
 
-|ULA_project|Complemento2:inst2|Somador:inst|MUX2x1:inst2
+|ULA_Final|ULA:inst|Complemento2:inst2|Somador:inst|MUX2x1:inst2
 out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 sel => inst.IN0
 sel => inst3.IN0
@@ -768,7 +798,7 @@ A => inst2.IN1
 B => inst3.IN1
 
 
-|ULA_project|AndVector:inst6
+|ULA_Final|ULA:inst|AndVector:inst6
 Out[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Out[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Out[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -783,7 +813,7 @@ B[2] => inst2.IN1
 B[3] => inst3.IN1
 
 
-|ULA_project|XorVector:inst7
+|ULA_Final|ULA:inst|XorVector:inst7
 Out[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Out[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Out[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -796,5 +826,63 @@ B[0] => inst.IN1
 B[1] => inst3.IN1
 B[2] => inst1.IN1
 B[3] => inst2.IN1
+
+
+|ULA_Final|Decodificador_Func:inst1
+OUT[0] <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst17.IN2
+A[0] => inst18.IN2
+A[0] => inst3.IN0
+A[0] => inst6.IN3
+A[0] => inst7.IN3
+A[0] => inst10.IN3
+A[0] => inst21.IN1
+A[0] => inst22.IN2
+A[0] => inst25.IN2
+A[0] => inst26.IN2
+A[0] => inst31.IN2
+A[0] => inst30.IN2
+A[1] => inst2.IN0
+A[1] => inst18.IN1
+A[1] => inst7.IN2
+A[1] => inst11.IN2
+A[1] => inst9.IN2
+A[1] => inst14.IN2
+A[1] => inst13.IN2
+A[1] => inst24.IN2
+A[1] => inst23.IN2
+A[1] => inst25.IN1
+A[1] => inst30.IN1
+A[2] => inst1.IN0
+A[2] => inst18.IN0
+A[2] => inst16.IN0
+A[2] => inst7.IN1
+A[2] => inst5.IN0
+A[2] => inst10.IN1
+A[2] => inst11.IN1
+A[2] => inst14.IN1
+A[2] => inst20.IN0
+A[2] => inst23.IN1
+A[2] => inst25.IN0
+A[2] => inst30.IN0
+A[3] => inst.IN0
+A[3] => inst7.IN0
+A[3] => inst9.IN0
+A[3] => inst14.IN0
+A[3] => inst22.IN0
+A[3] => inst23.IN0
+SINAL[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+SINAL[1] <= <VCC>
+SINAL[2] <= <VCC>
+SINAL[3] <= <VCC>
+SINAL[4] <= <VCC>
+SINAL[5] <= <VCC>
+SINAL[6] <= <VCC>
 
 

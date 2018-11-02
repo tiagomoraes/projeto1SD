@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 872 160 1048 176)
+	(rect 1032 160 1208 176)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SINAL[6..0]" (rect 90 0 147 12)(font "Arial" ))
 	(pt 0 8)
@@ -1299,6 +1299,21 @@ applicable agreement for further details.
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36)(line_width 1))
 	)
 )
+(symbol
+	(rect 800 88 832 104)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8)(line_width 1))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8)(line_width 1))
+	)
+)
 (connector
 	(pt 216 72)
 	(pt 256 72)
@@ -2201,16 +2216,6 @@ applicable agreement for further details.
 	(pt 256 272)
 )
 (connector
-	(pt 760 168)
-	(pt 872 168)
-	(bus)
-)
-(connector
-	(text "SINAL[6]" (rect 266 152 310 164)(font "Arial" ))
-	(pt 256 168)
-	(pt 760 168)
-)
-(connector
 	(text "OUT[6]" (rect 762 280 797 292)(font "Arial" ))
 	(pt 752 296)
 	(pt 800 296)
@@ -2239,6 +2244,100 @@ applicable agreement for further details.
 	(text "OUT[0]" (rect 778 1632 813 1644)(font "Arial" ))
 	(pt 768 1648)
 	(pt 800 1648)
+)
+(connector
+	(pt 944 120)
+	(pt 976 120)
+)
+(connector
+	(pt 944 168)
+	(pt 976 168)
+	(bus)
+)
+(connector
+	(pt 912 120)
+	(pt 944 120)
+)
+(connector
+	(pt 912 168)
+	(pt 944 168)
+	(bus)
+)
+(connector
+	(pt 880 120)
+	(pt 912 120)
+)
+(connector
+	(pt 880 168)
+	(pt 912 168)
+	(bus)
+)
+(connector
+	(pt 848 120)
+	(pt 880 120)
+)
+(connector
+	(pt 848 168)
+	(pt 880 168)
+	(bus)
+)
+(connector
+	(pt 816 120)
+	(pt 848 120)
+)
+(connector
+	(pt 760 168)
+	(pt 816 168)
+	(bus)
+)
+(connector
+	(pt 816 168)
+	(pt 848 168)
+	(bus)
+)
+(connector
+	(pt 816 104)
+	(pt 816 120)
+)
+(connector
+	(pt 976 168)
+	(pt 1032 168)
+	(bus)
+)
+(connector
+	(text "SINAL[0]" (rect 266 152 310 164)(font "Arial" ))
+	(pt 256 168)
+	(pt 760 168)
+)
+(connector
+	(text "SINAL[6]" (rect 800 120 812 164)(font "Arial" )(vertical))
+	(pt 816 120)
+	(pt 816 168)
+)
+(connector
+	(text "SINAL[5]" (rect 831 119 843 163)(font "Arial" )(vertical))
+	(pt 848 120)
+	(pt 848 168)
+)
+(connector
+	(text "SINAL[4]" (rect 864 120 876 164)(font "Arial" )(vertical))
+	(pt 880 120)
+	(pt 880 168)
+)
+(connector
+	(text "SINAL[3]" (rect 896 120 908 164)(font "Arial" )(vertical))
+	(pt 912 120)
+	(pt 912 168)
+)
+(connector
+	(text "SINAL[2]" (rect 928 120 940 164)(font "Arial" )(vertical))
+	(pt 944 120)
+	(pt 944 168)
+)
+(connector
+	(text "SINAL[1]" (rect 960 120 972 164)(font "Arial" )(vertical))
+	(pt 976 120)
+	(pt 976 168)
 )
 (junction (pt 216 48))
 (junction (pt 216 72))
@@ -2320,5 +2419,16 @@ applicable agreement for further details.
 (junction (pt 800 1128))
 (junction (pt 800 1376))
 (junction (pt 800 1648))
-(text "SINAL" (rect 800 144 835 158)(font "Arial" (font_size 8)))
+(junction (pt 976 168))
+(junction (pt 944 120))
+(junction (pt 944 168))
+(junction (pt 912 120))
+(junction (pt 912 168))
+(junction (pt 880 120))
+(junction (pt 880 168))
+(junction (pt 848 120))
+(junction (pt 848 168))
+(junction (pt 816 120))
+(junction (pt 816 168))
+(text "SINAL" (rect 760 144 795 158)(font "Arial" (font_size 8)))
 (text "NÚMERO" (rect 800 272 850 286)(font "Arial" (font_size 8)))
